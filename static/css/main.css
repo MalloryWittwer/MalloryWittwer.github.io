@@ -89,7 +89,6 @@ input::-moz-focus-inner {
 
 body {
 	background-color: #faefdc;
-	/*background-image: url("../../static/images/bg.png");*/
 	background-size: cover;
 }
 
