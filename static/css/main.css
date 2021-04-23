@@ -89,7 +89,7 @@ input::-moz-focus-inner {
 
 body {
 	background-color: #faefdc;
-	background-image: url("../../static/images/bg.png");
+	/*background-image: url("../../static/images/bg.png");*/
 	background-size: cover;
 }
 
@@ -1007,7 +1007,6 @@ body {
 			width: 100%;
 			height: 100%;
 			background-color: #ffb32b;
-			background-image: url("../../static/images/bg.jpg");
 			background-size: auto, auto, 100% auto;
 			background-position: center, center, top center;
 			background-repeat: repeat, no-repeat, no-repeat;
