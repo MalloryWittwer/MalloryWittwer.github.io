@@ -1,0 +1,150 @@
+﻿﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static//css/main.css" />
+</head>
+<body style='background-image:url(" .. /../static/images/bg.png");'>
+    <div id="wrapper" class="fade-in">
+
+        
+
+<!-- Main -->
+<div id="main">
+    <!-- Post -->
+    <section class="post">
+        <header class="major">
+            <span class="date">Software project (5 min read)</span>
+            <h1>A software for decoding 3D printed information in microstructures</h1>
+        </header>
+        <div>
+            <span class="image fit">
+                <img src="/static/images/gui_article_files/image001.gif">
+            </span>
+
+            <p>
+                During my time as a Research Associate
+                in the <i>Additive Microstructure Engineering Laboratory</i> at NTU in Singapore,
+                my team was interested in using 3D printing of metals to create new types of <i>
+                    functionally graded materials.
+                </i> This technology is not yet mature; however, it has
+                potential to significantly change the way we design technological parts in the
+                future. The idea is that, during the 3D priming process, we control parameters
+                such as the laser power or scanning speed to influence the microstructure of
+                the material (for example, the morphology and orientation of the grains). In
+                this way, we are able to build <i>blocks</i> with different properties within a
+                single printed part, in a way similar to a
+                <i><a href="https://www.sciencedirect.com/science/article/pii/S2214860420311817" target="_blank">LEGO</a></i>
+                structure.
+            </p>
+
+            <p>
+                At the time, I was involved in the
+                characterization of our printed functionally graded materials. In our tests, we
+                were including two types of microstructures as rectangular blocks. To validate the
+                tests, we needed to quickly check that the blocks were in the right place, with
+                the right microstructure. For this, we were using a directional reflectance
+                technique to provide a sequence of images of the printed surface, from which a
+                <a href="/post_article/1.html">segmentation</a> into two classes (microstructures 1
+                and 2) had to be retrieved. There were many possible ways to build the
+                segmentation pipeline involving solutions that landed more on the soft- or hard-coding
+                side. In this case, I opted for an approach that involved decomposing the
+                signal using <a href="https://en.wikipedia.org/wiki/Principal_component_analysis" target="_blank">
+                    Principal Component Analysis
+                </a> (PCA)
+                and feeding the PCA projection to a shallow binary neural network classifier. I
+                found that this approach offered the best combination of high performance and lightweight
+                computation.
+            </p>
+
+            <span class="image fit">
+                <img src="/static/images/gui_article_files/image002.png">
+            </span>
+
+            <p>
+                The decoding technology worked,
+                more or less, but the program had to be used by other members of my team who
+                were not familiar with coding. To make it easy for my collaborators to use my program,
+                I integrated to it a Graphical User Interface (GUI) coded in Tkinter (Python). To
+                compile the app, the program involved bringing together fifteen different elements
+                (displays, menus, windows…) that fulfilled different functions. The app was executed
+                from <b>app.py</b> at the top of the directory structure. I also included a
+                setup.py, README and license file and backed up the project on
+                <a href="https://github.com/MalloryWittwer?tab=repositories" target="_blank">GitHub</a>.
+            </p>
+
+            <p>
+                The GUI featured a primary
+                display of the microstructure complemented by two side displays that showed the
+                reflectance signal at the mouse cursor location and various other information. On
+                the right were specialized panels for data processing and analysis. These
+                panels were actually modular; I designed several of them which could be
+                included for various studies. Here, in the first panel, resolution of the
+                dataset could be reduced, and the field of view cropped, to reduce memory
+                requirement. The second panel was for binary classification of microstructural features.
+                This panel let the user tailor the segmentation pipeline to quickly iterate
+                over different approaches, optimize hyperparameters, visualize and save the
+                results. It included options to choose which dimensionality reduction technique
+                to apply (PCA, NMF, None) and to customize the neural network architecture (number
+                of nodes and layers, regularization, activation function…). Selection of a
+                training set, training and prediction of microstructural classes were also accessible
+                from within the GUI.
+            </p>
+
+            <p align=center style='margin-bottom:.25in;text-align:center'>
+                <video controls width="600">
+                    <source src="/static/images/gui_article_files/video001.mp4"
+                            type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </p>
+
+            <p>
+                Overall, I enjoyed working on that
+                project and <b>learnt a lot</b>. It was the biggest Python project I had to manage
+                so far, in terms of the volume of code to manage. I had to think quite hard in
+                order to make the project structure manageable and keep the code simple and
+                understandable, while still enabling many complex backend interactions between graphical
+                elements, data, and machine learning models. Moreover, particularly enjoyed
+                thinking about the <i>user experience</i> which I wanted to be comfortable and intuitive.
+                The final program was running smoothly and enabled faster research iterations
+                on 3D printed functionally graded materials, which is likely to boost research
+                outputs in this field.
+            </p>
+        </div>
+        <ul class="actions special">
+            <li><a href="/index/2/" class="button large">Home</a></li>
+        </ul>
+    </section>
+</div>
+
+
+
+        <footer id="footer">
+            <section class="split contact">
+                <section id="footer_contact">
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/m-wittwer/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+                        <li><a href="https://github.com/MalloryWittwer" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto: mallory.wittwer@gmail.com" class="icon fas fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <div id="copyright">
+            <ul><li>&copy; Mallory Wittwer</li><li>Generated by: Python Frozen-Flask</li><li>Design credit: HTML5 UP</li><li>Background: unsplash</li></ul>
+        </div>
+    </div>
+
+    <script src="/static//js/jquery.min.js"></script>
+    <script src="/static//js/jquery.scrollex.min.js"></script>
+    <script src="/static//js/jquery.scrolly.min.js"></script>
+    <script src="/static//js/browser.min.js"></script>
+    <script src="/static//js/breakpoints.min.js"></script>
+    <script src="/static//js/main.js"></script>
+
+</body>
+</html>
