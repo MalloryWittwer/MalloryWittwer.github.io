@@ -1,0 +1,238 @@
+﻿﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static//css/main.css" />
+</head>
+<body>
+    <div id="wrapper" class="fade-in">
+
+        
+
+<!-- Main -->
+<div id="main">
+	<!-- Post -->
+	<section class="post">
+		<header class="major">
+			<span class="date">Paper summary (5 min read)</span>
+			<h1>Microstructure segmentation by similarity learning</h1>
+		</header>
+
+		<div>
+			<p align=center style='text-align:center'>
+				<span class="image fit">
+					<img src="/static/images/grain_seg_article_files/image001.gif">
+				</span>
+			</p>
+
+			<p align=center style='margin-bottom:.25in;text-align:center'>
+				<i>(Artistic view) Metallic grains are revealed by directional illumination.</i>
+			</p>
+
+			<div class="box">
+				<p>
+					This is a summary of our <a href="https://www.sciencedirect.com/science/article/pii/S104458032100108X?via%3Dihub">paper</a>
+					published in 2021 in the scientific journal <i>Materials Characterization</i>. We
+					proposed a new method for fast and autonomous characterization of the grain
+					microstructure in metals. Our method was based on similarity learning, a
+					concept also used in digital and facial recognition systems.
+				</p>
+			</div>
+
+			<p>
+				Have you ever wondered what you
+				would see by looking at a piece of metal closely under a microscope? In many
+				cases, the surface is made of a vast aggregate of microscopic grains, which are
+				in fact small crystals oriented in different directions. The size, shape, and
+				orientation of these grains influence properties of the material, such as
+				strength and toughness, and are indicative of the conditions of temperature and
+				pressure in which the material was formed. Analysing the grain microstructure
+				can help understand and control many industrial processes. In laboratories, grain
+				characterization is usually carried based on optical micrographs of a
+				cross-section of the material. The challenge is to accurately segment the image
+				into its constituent grains, which is done using digital image processing
+				algorithms.
+			</p>
+
+			<p>
+				During my time as a Research
+				Associate in the <i>Additive Microstructure Engineering Laboratory</i> at NTU
+				in Singapore, my team was interested in developing a
+				more effective grain segmentation technique compared to pre-existing techniques.
+				We suggested that capturing not just one, but many images of the grains while
+				varying the position of the light source around the sample would enable to
+				collect more information about the grains and facilitate their differentiation.
+				To prove that concept, we built a specialized microscope that let us realize this
+				analysis. Acquiring the data was fine; the main difficulty stemmed from that, for
+				each studied microstructure, our microscope was producing around 1’800
+				high-resolution images of the grains, each taken under a different illumination
+				condition. This is like capturing a “super&#8209;image” of the microstructure
+				containing not just three (as in RGB-coloured images) but 1’800 independent
+				channels. Most existing segmentation algorithms were not designed to handle that
+				many channels. Therefore, we designed our own approach to extract the grain structure
+				from the datasets.
+			</p>
+
+			<p>
+				A relevant first step was to <i>
+					reduce
+					dimensionality
+				</i> of the data (the number of channels) to some lower number, while
+				preserving as much information about the grains as possible. To achieve this, we
+				used a technique called <a href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization" target="_blank">
+					Non-Negative Matrix Factorization
+				</a>(NMF).
+				Using NMF, we were able to “distillate” the dataset
+				by compressing it into only twenty channels, which were all highly concentrated
+				with information about the grains. Next was the <i>real</i> challenge: figuring
+				out how to extract the grains from the dataset. Here, the problem consists of
+				grouping together all the pixels that belonged to a single grain. Each pixel is
+				associated with twenty numbers representing its “coordinates” in the NMF space.
+				Presumably, in this high-dimensional space pixels belonging to the same grain
+				are close together, while pixels belonging to different grains are far from
+				each other.
+			</p>
+
+			<p>
+				If the NMF space had only three
+				dimensions instead of twenty, we would be able to visualize all the pixels in
+				it. We can achieve this by further compressing the dataset, this time using the
+				<a href="https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding" target="_blank">
+					t-SNE
+				</a>algorithm. In the image below, we
+				selected a small portion of the field of view containing about 100 grains (in a
+				real application, there would be many more grains) and projected the pixels
+				using T-SNE. We coloured the data points based on the <i>ground truth</i>
+				segmentation shown on the left to emphasize that <b>
+					pixels from the same grain tend to aggregate together
+				</b>. In this example case, we could easily segment
+				the grains using clustering algorithms (K-Means, DBSCAN, …), however a
+				clustering approach would not scale well to large number of grains in the
+				thousands, or more.
+			</p>
+			
+			<p align=center style='text-align:center'>
+				<span>
+					<img height=300 src="/static/images/grain_seg_article_files/image002.png">
+				</span>
+				<span>
+					<img height=300 src="/static/images/grain_seg_article_files/image003.gif">
+				</span>
+			</p>
+
+			<p align=center style='text-align:center'>
+				<i>Ground truth on the left, T-SNE on the right.</i>
+			</p>
+
+			<p>
+				This is where we had the idea of
+				approaching the problem by <a href="https://en.wikipedia.org/wiki/Similarity_learning" target="_blank">
+					similarity learning
+				</a>.
+				The idea is based on the observation that, fundamentally, we want to be able to
+				pick any two pixels from the dataset and answer the questions: <i>
+					Do these two
+					pixels belong to the same or to different grains
+				</i>? If we are able to
+				determine that, we will have solved the grain segmentation problem. Interestingly,
+				the same kind of question underlines, for example, facial recognition and
+				fingerprint reader systems: “<i>
+					Does this fingerprint belong to the authorized
+					user (it is the same person) or not (it is a different person)?
+				</i>”.
+			</p>
+
+			<p>
+				Because there are two possible
+				outcomes, we need a <i>binary classifier</i> model. We can train it to
+				determine if two input pixels are from the same (S) or from different (D)
+				grains. From there, there are two variants to similarity learning. The first possible
+				approach aims at figuring out the classification boundary between the <i>similar</i>
+				and <i>dissimilar</i> domains. This is the approach we used in the paper.
+				Because the multi-angle reflectance data was rich and the NMF decomposition
+				powerful, we found that a simple logistic regression classifier was enough to
+				do the job of separating the S and D domains. Compared to a more complex model,
+				such as an artificial neural network, logistic regression was fast and less
+				prone to overfitting, which was perfect for our application. The other possible
+				approach would be to finding a <i>transform</i> that brings similar examples
+				closer together and dissimilar examples further from each other, so that the
+				two ensembles can be easily separated. This could be achieved, for example, by
+				training a Siamese neural network on the
+				<a href="https://en.wikipedia.org/wiki/Triplet_loss" target="_blank">triplet loss</a>.
+			</p>
+
+			<p>
+				To segment the microstructures,
+				we combined the binary classifier with a region-merging algorithm. Every pixel
+				starts as a different “region” and neighboring regions are progressively merged
+				based on the output of the binary classifier. This leads to a segmentation
+				because, at every step, the classifier is answering the question: <i>
+					are these two pixels from the same or from different grains?
+				</i> In one case, the pixels
+				are merged and in the other, they are left separate. The process automatically
+				leads to a grain segmentation.
+			</p>
+
+			<p align=center style='text-align:center'>
+				<span>
+					<img height=300 src="/static/images/grain_seg_article_files/image004.png">
+				</span>
+				<span>
+					<img height=300 src="/static/images/grain_seg_article_files/image005.gif">
+				</span>
+			</p>
+
+			<p align=center style='text-align:center'>
+				<i>Merging of pixels powered by similar/dissimilar classification.</i>
+			</p>
+
+			<p>
+				To conclude, this work was made
+				possible by (i) the clever idea of capturing many images of the grains under
+				different illuminations, (ii) an effective way of pre-processing the
+				multi-illumination data by dimensionality reduction, (iii) realizing that the
+				problem could be addressed by similarity learning, and (iv) the integration of
+				a binary classifier to a region-merging algorithm. The result is a new
+				technique to perform segmentation of polycrystals that is more efficient than
+				previous techniques.
+			</p>
+
+			<p>Thank you for reading!</p>
+		</div>
+
+		<ul class="actions special">
+			<li><a href="/home" class="button large">Home</a></li>
+		</ul>
+	</section>
+</div>
+
+
+
+        <footer id="footer">
+            <section class="split contact">
+                <section id="footer_contact">
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/m-wittwer/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+                        <li><a href="https://github.com/MalloryWittwer" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto: mallory.wittwer@gmail.com" class="icon fas fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <div id="copyright">
+            <ul><li>&copy; Mallory Wittwer</li><li>Powered by: Python Flask</li><li>Design: HTML5 UP</li><li>Background: unsplash</li></ul>
+        </div>
+    </div>
+
+    <script src="/static//js/jquery.min.js"></script>
+    <script src="/static//js/jquery.scrollex.min.js"></script>
+    <script src="/static//js/jquery.scrolly.min.js"></script>
+    <script src="/static//js/browser.min.js"></script>
+    <script src="/static//js/breakpoints.min.js"></script>
+    <script src="/static//js/main.js"></script>
+
+</body>
+</html>

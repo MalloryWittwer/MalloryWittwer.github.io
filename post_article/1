@@ -1,0 +1,71 @@
+﻿﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static//css/main.css" />
+</head>
+<body>
+    <div id="wrapper" class="fade-in">
+
+        
+
+<!-- Main -->
+<div id="main">
+    <!-- Post -->
+    <section class="post">
+        <header class="major">
+            <span class="date">Conversation starters</span>
+        </header>
+        <div>
+            <p align=center style='margin-bottom:.25in;text-align:center'>
+                <span class="image">
+                    <img width=600 src="/static/images/word_cloud_article_files/image001.png">
+                </span>
+            </p>
+            <div class="box">
+                <p>
+                    I often get curious about “stuff”.
+                    So, I made this selection of topics I find particularly interesting. You could call
+                    it a modern <i><a href="https://en.wikipedia.org/wiki/Cabinet_of_curiosities" , target="_blank">Cabinet de curiosités</a></i>: a
+                    collection of intriguing relics of the natural world. I will update the cabinet
+                    periodically in the future. You are welcome to reach out if you
+                    want to have a chat about any of these topics!
+                </p>
+            </div>
+        </div>
+        <ul class="actions special">
+            <li><a href="/home" class="button large">Home</a></li>
+        </ul>
+</section>
+</div>
+
+
+
+        <footer id="footer">
+            <section class="split contact">
+                <section id="footer_contact">
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/m-wittwer/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+                        <li><a href="https://github.com/MalloryWittwer" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto: mallory.wittwer@gmail.com" class="icon fas fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <div id="copyright">
+            <ul><li>&copy; Mallory Wittwer</li><li>Powered by: Python Flask</li><li>Design: HTML5 UP</li><li>Background: unsplash</li></ul>
+        </div>
+    </div>
+
+    <script src="/static//js/jquery.min.js"></script>
+    <script src="/static//js/jquery.scrollex.min.js"></script>
+    <script src="/static//js/jquery.scrolly.min.js"></script>
+    <script src="/static//js/browser.min.js"></script>
+    <script src="/static//js/breakpoints.min.js"></script>
+    <script src="/static//js/main.js"></script>
+
+</body>
+</html>
