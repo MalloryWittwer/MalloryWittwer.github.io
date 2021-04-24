@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/static//css/main.css" />
 </head>
-<body style='background-image:url(" .. /../static/images/bg.png");'>
+<body style='background-image:url("/static/images/bg.png");'>
     <div id="wrapper" class="fade-in">
 
         
@@ -15,10 +15,11 @@
 <div id="main">
 	<!-- Main article -->
 	<div class="header">
-		<span class="image left">
-			<img src="/static//images/pic_profile.png">
-		</span>
-		<h1 id="name_header">Mallory<br>Wittwer</h1>
+		<p align=center style='text-align:center'>
+			<span class="image left", id="profile_pic">
+				<img src="/static//images/pic_profile.png">
+			</span>
+			<h1 id="name_header">Mallory<br>Wittwer</h1>
 		<p id="about_paragraph">
 			Welcome!<br>
 			The short articles below communicate about what I worked on and some of my ideas. To contact me,
@@ -61,22 +62,52 @@
 			</ul>
 		</article>
 		
+		<article>
+			<header>
+				<span class="date">Paper summary (5 min read)</span>
+				<h2>
+					<a href="/post_article/3.html">AI-based grain orientation mapping</a>
+				</h2>
+			</header>
+			<a href="/post_article/3.html" class="image fit">
+				<img src=/post_pic/3.jpg alt="" />
+			</a>
+			<ul class="actions special">
+				<li><a href="/post_article/3.html" class="button">View</a></li>
+			</ul>
+		</article>
+		
+		<article>
+			<header>
+				<span class="date">Software project (5 min read)</span>
+				<h2>
+					<a href="/post_article/4.html">A software for decoding 3D printed information in microstructures</a>
+				</h2>
+			</header>
+			<a href="/post_article/4.html" class="image fit">
+				<img src=/post_pic/4.jpg alt="" />
+			</a>
+			<ul class="actions special">
+				<li><a href="/post_article/4.html" class="button">View</a></li>
+			</ul>
+		</article>
+		
 	</section>
 
 	<!-- Pagination -->
-	<footer>
+	<!--<footer>
 		<div class="pagination">
 			
 			
-			<a href="/index/1/" class="page">1</a>
+			<a href="/index/?page=1" class="page">1</a>
 			
 			
 			
-			<a href="/index/2/" class="page">2</a>
+			<a href="/index/?page=2" class="page">2</a>
 			
 			
 		</div>
-	</footer>
+	</footer>-->
 </div>
 
 

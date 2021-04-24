@@ -58,7 +58,8 @@ input::-moz-focus-inner {
 /* Custom */
 
 #name_header {
-	font-size: 6rem;
+	font-size: 5rem;
+	margin-top: 40px;
 }
 
 /* Basic */
@@ -573,7 +574,6 @@ body {
 			.image.main {
 				margin: 2rem 0;
 			}
-
 		}
 
 	a.image {
@@ -587,6 +587,15 @@ body {
 		a.image:hover img {
 			transform: scale(1.05);
 		}
+
+@media screen and (max-width: 736px) {
+	#profile_pic {
+		display: block;
+		width: 50%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
 
 /* Actions */
 
@@ -887,7 +896,7 @@ body {
 
 /* Pagination */
 
-	.pagination {
+/*	.pagination {
 		display: inline-flex;
 		user-select: none;
 		cursor: default;
@@ -988,7 +997,7 @@ body {
 
 	.pagination span {
 		color: #eeeeee;
-	}
+	}*/
 
 /* Wrapper */
 

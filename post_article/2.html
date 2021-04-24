@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/static//css/main.css" />
 </head>
-<body style='background-image:url("static/images/bg.png");'>
+<body style='background-image:url("/static/images/bg.png");'>
     <div id="wrapper" class="fade-in">
 
         
@@ -105,7 +105,7 @@
 				selected a small portion of the field of view containing about 100 grains (in a
 				real application, there would be many more grains) and projected the pixels
 				using T-SNE. We coloured the data points based on the <i>ground truth</i>
-				segmentation shown on the left to emphasize that <b>
+				segmentation to emphasize that <b>
 					pixels from the same grain tend to aggregate together
 				</b>. In this example case, we could easily segment
 				the grains using clustering algorithms (K-Means, DBSCAN, …), however a
@@ -123,7 +123,7 @@
 			</p>
 
 			<p align=center style='text-align:center'>
-				<i>Ground truth on the left, T-SNE on the right.</i>
+				<i>Ground truth segmentation and 3D t-SNE plot.</i>
 			</p>
 
 			<p>
@@ -203,7 +203,7 @@
 		</div>
 
 		<ul class="actions special">
-			<li><a href="/index/1/" class="button large">Home</a></li>
+			<li><a href="/index/?page=1" class="button large">Home</a></li>
 		</ul>
 	</section>
 </div>
