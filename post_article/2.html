@@ -43,7 +43,7 @@
 
 			<p>
 				Have you ever wondered what you
-				would see by looking at a piece of metal closely under a microscope? In many
+				would see by looking at a piece of metal under a microscope? In many
 				cases, the surface is made of a vast aggregate of microscopic grains, which are
 				in fact small crystals oriented in different directions. The size, shape, and
 				orientation of these grains influence properties of the material, such as
@@ -132,7 +132,7 @@
 					similarity learning
 				</a>.
 				The idea is based on the observation that, fundamentally, we want to be able to
-				pick any two pixels from the dataset and answer the questions: <i>
+				pick any two pixels from the dataset and answer the question: <i>
 					Do these two
 					pixels belong to the same or to different grains
 				</i>? If we are able to
@@ -156,7 +156,7 @@
 				do the job of separating the S and D domains. Compared to a more complex model,
 				such as an artificial neural network, logistic regression was fast and less
 				prone to overfitting, which was perfect for our application. The other possible
-				approach would be to finding a <i>transform</i> that brings similar examples
+				approach would be to find a <i>transform</i> that brings similar examples
 				closer together and dissimilar examples further from each other, so that the
 				two ensembles can be easily separated. This could be achieved, for example, by
 				training a Siamese neural network on the
@@ -167,12 +167,12 @@
 				To segment the microstructures,
 				we combined the binary classifier with a region-merging algorithm. Every pixel
 				starts as a different “region” and neighboring regions are progressively merged
-				based on the output of the binary classifier. This leads to a segmentation
-				because, at every step, the classifier is answering the question: <i>
+				based on the output of the binary classifier. This process automatically 
+				leads to a grain segmentation because, at every step, the classifier is answering 
+				the question: <i>
 					are these two pixels from the same or from different grains?
 				</i> In one case, the pixels
-				are merged and in the other, they are left separate. The process automatically
-				leads to a grain segmentation.
+				are merged and in the other, they are left separate.
 			</p>
 
 			<p align=center style='text-align:center'>
