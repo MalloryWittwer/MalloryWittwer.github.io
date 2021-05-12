@@ -42,6 +42,18 @@
 			</div>
 
 			<p>
+				<b>No time to read? Listen to an audio reading of this article (8 min):</b>
+			</p>
+
+			<p align=center style='text-align:center'>
+				<audio controls
+					   src="/static/images/grain_seg_article_files/audio001.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+				</audio>
+			</p>
+			
+			<p>
 				Have you ever wondered what you
 				would see by looking at a piece of metal under a microscope? In many
 				cases, the surface is made of a vast aggregate of microscopic grains, which are
@@ -112,7 +124,7 @@
 				clustering approach would not scale well to large number of grains in the
 				thousands, or more.
 			</p>
-			
+
 			<p align=center style='text-align:center'>
 				<span>
 					<img height=300 src="/static/images/grain_seg_article_files/image002.png">
@@ -167,8 +179,8 @@
 				To segment the microstructures,
 				we combined the binary classifier with a region-merging algorithm. Every pixel
 				starts as a different “region” and neighboring regions are progressively merged
-				based on the output of the binary classifier. This process automatically 
-				leads to a grain segmentation because, at every step, the classifier is answering 
+				based on the output of the binary classifier. This process automatically
+				leads to a grain segmentation because, at every step, the classifier is answering
 				the question: <i>
 					are these two pixels from the same or from different grains?
 				</i> In one case, the pixels
