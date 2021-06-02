@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="/static//css/main.css" />
 </head>
-<body style='background-image:url("/static/images/bg.png");'>
+<body>
     <div id="wrapper" class="fade-in">
 
         
@@ -15,14 +15,26 @@
 <div id="main">
 	<!-- Main article -->
 	<div class="header">
+
+		<p align="right" , style="text-align:right">
+			<select id="theme_selector">
+				<option value="">Sunlight</option>
+				<option value="1">Space</option>
+				<option value="2">Molecular</option>
+				<option value="3">Creative</option>
+				<option value="4">Natural</option>
+				<option value="5">Silver</option>
+			</select>
+		</p>
+
 		<p align=center style='text-align:center'>
-			<span class="image left", id="profile_pic">
+			<span class="image left" , id="profile_pic">
 				<img src="/static//images/pic_profile.png">
 			</span>
 			<h1 id="name_header">Mallory<br>Wittwer</h1>
 		<p id="about_paragraph">
 			Welcome!<br>
-			The short articles below communicate about what I worked on and some of my ideas. To contact me,
+			Here, you will find out about what I worked on and some of my ideas. To contact me,
 			feel free to <a href="mailto: mallory.wittwer@gmail.com">drop me an email</a>,
 			<a href="https://www.linkedin.com/in/m-wittwer/" target="_blank">connect on Linkedin</a>, or
 			<a href="https://calendly.com/mallory-wittwer" target="_blank">arrange a call</a>. I'll be happy to have a chat!
@@ -96,7 +108,7 @@
 			<header>
 				<span class="date">Podcasts selection</span>
 				<h2>
-					<a href="/post_article/5.html">My selection of enriching podcasts</a>
+					<a href="/post_article/5.html">My selection of podcasts</a>
 				</h2>
 			</header>
 			<a href="/post_article/5.html" class="image fit">
@@ -104,6 +116,36 @@
 			</a>
 			<ul class="actions special">
 				<li><a href="/post_article/5.html" class="button">View</a></li>
+			</ul>
+		</article>
+		
+		<article>
+			<header>
+				<span class="date">Project list (2 min read)</span>
+				<h2>
+					<a href="/post_article/6.html">Ongoing projects</a>
+				</h2>
+			</header>
+			<a href="/post_article/6.html" class="image fit">
+				<img src=/post_pic/6.jpg alt="" />
+			</a>
+			<ul class="actions special">
+				<li><a href="/post_article/6.html" class="button">View</a></li>
+			</ul>
+		</article>
+		
+		<article>
+			<header>
+				<span class="date">Machine learning project (3 min read)</span>
+				<h2>
+					<a href="/post_article/7.html">Procedural material synthesis by machine learning</a>
+				</h2>
+			</header>
+			<a href="/post_article/7.html" class="image fit">
+				<img src=/post_pic/7.jpg alt="" />
+			</a>
+			<ul class="actions special">
+				<li><a href="/post_article/7.html" class="button">View</a></li>
 			</ul>
 		</article>
 		
@@ -150,6 +192,7 @@
     <script src="/static//js/browser.min.js"></script>
     <script src="/static//js/breakpoints.min.js"></script>
     <script src="/static//js/main.js"></script>
+    <script src="/static//js/theme_switcher.js"></script>
 
 </body>
 </html>

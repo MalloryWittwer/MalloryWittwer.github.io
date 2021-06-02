@@ -1,6 +1,12 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+:root {
+	--basetext: #191611;
+	--highlight: #ffb32b;
+	--copyrightcol: #ffffff;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -152,7 +158,7 @@ body {
 		}
 
 	body {
-		color: #191611;
+		color: var(--basetext);
 	}
 
 	body, input, select, textarea {
@@ -293,25 +299,25 @@ body {
 	}
 
 	input, select, textarea {
-		color: #191611;
+		color: var(--basetext);
 	}
 
 	a {
-		color: #191611;
+		color: var(--basetext);
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffb32b !important;
+			color: var(--highlight) !important;
 		}
 
 	strong, b {
-		color: #191611;
+		color: var(--basetext);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #191611;
+		color: var(--basetext);
 	}
 
 	blockquote {
@@ -468,21 +474,21 @@ body {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #191611;
-		color: #191611 !important;
+		box-shadow: inset 0 0 0 2px var(--basetext);
+		color: var(--basetext) !important;
 	}
 
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #ffb32b;
-			color: #ffb32b !important;
+			box-shadow: inset 0 0 0 2px var(--highlight);
+			color: var(--highlight) !important;
 		}
 
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #191611;
+			background-color: var(--basetext);
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -490,7 +496,7 @@ body {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ffb32b;
+				background-color: var(--highlight);
 			}
 
 /* Icon */
@@ -798,7 +804,7 @@ a.image {
 	}
 
 	ul.icons li a.icon:hover:before {
-		color: #ffb32b;
+		color: var(--highlight);
 	}
 
 	ul.icons.alt li .icon:before {
@@ -806,7 +812,7 @@ a.image {
 	}
 
 	ul.icons.alt li a.icon:hover:before {
-		box-shadow: inset 0 0 0 2px #ffb32b;
+		box-shadow: inset 0 0 0 2px var(--highlight);
 	}
 
 /* Header */
@@ -991,18 +997,18 @@ a.image {
 	}
 
 	.pagination a {
-		color: #191611 !important;
+		color: var(--basetext) !important;
 	}
 
 		.pagination a:hover {
-			color: #ffb32b !important;
-			border-color: #ffb32b;
+			color: var(--highlight) !important;
+			border-color: var(--highlight);
 			z-index: 1;
 		}
 
 			.pagination a:hover + a,
 			.pagination a:hover + span {
-				border-left-color: #ffb32b;
+				border-left-color: var(--highlight);
 			}
 
 		.pagination a.active {
@@ -1028,7 +1034,7 @@ a.image {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #ffb32b;
+			background-color: var(--highlight);
 			background-size: auto, auto, 100% auto;
 			background-position: center, center, top center;
 			background-repeat: repeat, no-repeat, no-repeat;
@@ -1098,7 +1104,7 @@ a.image {
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #ffb32b !important;
+				color: var(--highlight) !important;
 			}
 
 		#header strong, #header b {
@@ -1139,8 +1145,8 @@ a.image {
 		}
 
 			#header .logo:hover {
-				border-color: #ffb32b !important;
-				color: #ffb32b !important;
+				border-color: var(--highlight) !important;
+				color: var(--highlight) !important;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -1370,7 +1376,7 @@ a.image {
 
 #footer a:hover {
 	border-bottom-color: transparent;
-	color: #ffb32b !important;
+	color: var(--highlight) !important;
 }
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
@@ -1382,7 +1388,7 @@ a.image {
 }
 
 #footer ul.icons li a.icon:hover:before {
-	color: #ffb32b;
+	color: var(--highlight);
 }
 
 #footer ul.icons.alt li .icon:before {
@@ -1390,7 +1396,7 @@ a.image {
 }
 
 #footer ul.icons.alt li a.icon:hover:before {
-	box-shadow: inset 0 0 0 2px #ffb32b;
+	box-shadow: inset 0 0 0 2px var(--highlight);
 }
 
 #footer > section {
@@ -1414,9 +1420,8 @@ a.image {
 /* Copyright */
 
 #copyright {
-	color: #191611;
+	color: var(--copyrightcol);
 	position: relative;
-	color: rgba(25, 22, 17, 0.5);
 	cursor: default;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 0.8rem;
