@@ -1455,3 +1455,10 @@ a.image {
 	margin-left: 0;
 	padding-left: 0;
 }
+
+#theme_selector {
+	background-color: var(--highlight);
+	color: var(--basetext);
+	border-radius: 5px;
+	width: 150px;
+}
