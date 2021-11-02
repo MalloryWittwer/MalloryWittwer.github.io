@@ -10,6 +10,10 @@
     --themeColor: #94d041;
 }
 
+a {
+    color: var(--textColor);
+}
+
 body {
     font-family: "Open Sans", "Helvetica", "sans-serif";
     color: var(--textColor);
