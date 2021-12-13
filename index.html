@@ -38,8 +38,7 @@
       <header class="centered-flex">
         <h1>Coming Soon!</h1>
         <p>
-          My website is under construction. Come back again in the
-          future!<br />
+          My website is under construction. Come back again in the future!<br />
           In the meantime, you can check out a list of my favourite podcasts
           <a
             href="https://mwittwer.notion.site/Fantastic-podcasts-and-where-to-find-them-12c0223e6a12457ba9717a66514043d8"
@@ -56,12 +55,17 @@
           <div class="grainseg-container">
             <div class="grainseg-wrapper centered-flex">
               <div class="grainseg-content">
-                <!-- <p class="journal">Materials Characterization, 2021</p> -->
-                <p class="authors">M. Wittwer, B. Gaskey, M. Seita | Materials Characterization, 2021</p>
-                <h3 class="paper-title">Self-supervised microstructure segmentation</h3>
+                <p class="authors">
+                  M. Wittwer, B. Gaskey, M. Seita | Materials Characterization,
+                  2021
+                </p>
+                <h3 class="paper-title">
+                  Self-supervised microstructure segmentation
+                </h3>
                 <p class="paper-description">
-                  In this paper, we demonstrate how an automated segmentation algorithm can be trained on 
-                  directional reflectance data, leading to faster and easier separation of grains.
+                  In this paper, we demonstrate how an automated segmentation
+                  algorithm can be trained on directional reflectance data,
+                  leading to faster and easier separation of grains.
                 </p>
                 <div class="paper-btn-wrapper">
                   <a href="#" class="btn-view-paper">View Paper</a>
@@ -69,25 +73,53 @@
                 </div>
               </div>
             </div>
-            <img src="static/figs/seg_2.png" alt="" id="image" />
+            <img src="static/figs/seg_2.png" alt="" id="seg-image" />
           </div>
 
           <div class="oripred-container">
-            <div class="oripred-content">
-              <h3 class="paper-title">Crystal orientation mapping by machine learning</h3>
-              <p class="authors">M. Wittwer, M. Seita</p>
-              <p class="journal">npj Computational Materials, 2021</p>
-              <a href="#" class="btn-view-code">View Code</a>
-              <a href="#" class="btn-view-paper">View Paper</a>
+            <div class="figure-wrapper">
+              <figure
+                id="figure"
+                style="
+                  background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.1),
+                      rgba(0, 0, 0, 0.05)
+                    ),
+                    url('static/assets/before.png');
+                "
+              >
+                <div
+                  id="divisor"
+                  style="
+                    background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.1),
+                        rgba(0, 0, 0, 0.05)
+                      ),
+                      url('static/assets/after.png');
+                  "
+                ></div>
+              </figure>
             </div>
-            <!-- <figure id="figure" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.05)), url('assets/before.png')">
-              <div
-                id="divisor"
-                style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.05)), url('assets/after.png')"
-              ></div>
-            </figure> -->
+            <div class="oripred-wrapper centered-flex">
+              <div class="oripred-content">
+                <p class="authors">
+                  M. Wittwer, M. Seita | npj Computational Materials, 2021
+                </p>
+                <h3 class="paper-title">
+                  Crystal orientation mapping by machine learning
+                </h3>
+                <p class="paper-description">
+                  In this paper, we demonstrate how an automated segmentation
+                  algorithm can be trained on directional reflectance data,
+                  leading to faster and easier separation of grains.
+                </p>
+                <div class="paper-btn-wrapper">
+                  <a href="#" class="btn-view-paper-dark">View Paper</a>
+                  <a href="#" class="btn-view-code-dark">View Code</a>
+                </div>
+              </div>
+            </div>
           </div>
-
         </section>
       </main>
       <footer class="centered-flex">
@@ -113,5 +145,6 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

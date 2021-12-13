@@ -1,6 +1,5 @@
 #publications {
   background-color: rgb(209, 209, 209);
-  /* height: 800px; */
   width: 100%;
   flex-direction: column;
 }
@@ -23,7 +22,6 @@
   color: white;
   opacity: 0.8;
   width: 500px;
-  /* border-radius: 10px; */
   padding-left: 40px;
   border-left: 1px solid white;
 }
@@ -32,10 +30,6 @@
   margin: 8px 0px;
   font-size: 16px;
 }
-
-/* .journal {
-  font-size: 16px;
-} */
 
 .paper-title {
   font-size: 32px;
@@ -46,30 +40,48 @@
   opacity: 0.7;
 }
 
-/* .paper-description {
-  font-size: 14px;
-} */
-
 .paper-btn-wrapper {
-  /* width: 100%; */
-  /* justify-content: flex-start; */
-  /* background-color: pink; */
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
-.paper-btn-wrapper a {
-  margin: 0px 10px;
-}
-
-#image {
+#seg-image {
   height: 100%;
 }
 
+/* ORIPRED CONTAINER */
+
 .oripred-container {
   width: 100%;
-  height: 750px;
-  width: 1200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e9e9e9;
+}
+
+.oripred-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.figure-wrapper {
+  width: 100vh;
+  height: 100%;
+  flex-grow: 1;
+  background-color: tomato;
+}
+
+.oripred-content {
+  opacity: 0.9;
+  width: 500px;
+  padding-right: 40px;
+  border-right: 1px solid var(--textColor);
+}
+
+.oripred-content p {
+  margin: 8px 0px;
+  font-size: 16px;
 }
 
 #divisor {
@@ -87,24 +99,54 @@
 figure {
   background-size: cover;
   position: relative;
-  font-size: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
+}
+
+/* BUTTONS */
+
+.paper-btn-wrapper .btn-view-code, .paper-btn-wrapper .btn-view-code-dark {
+  margin: 0px 10px;
+}
+
+.btn-view-paper,
+.btn-view-code,
+.btn-view-paper-dark,
+.btn-view-code-dark {
+  border-radius: 0.5em;
+  padding: 5px 15px;
+  text-decoration: none;
+  opacity: 0.7;
 }
 
 .btn-view-paper,
 .btn-view-code {
   border: 1px solid white;
-  border-radius: 0.5em;
-  padding: 5px 15px;
+}
+
+.btn-view-paper-dark,
+.btn-view-code-dark {
+  border: 1px solid black;
+}
+
+.btn-view-paper:hover,
+.btn-view-code:hover,
+.btn-view-paper-dark:hover,
+.btn-view-code-dark:hover {
+  opacity: 1;
+}
+
+.btn-view-paper,
+.btn-view-code {
   color: white;
-  text-decoration: none;
-  opacity: 0.7;
 }
 
 .btn-view-paper:hover,
 .btn-view-code:hover {
-  opacity: 1;
   color: white;
+}
+
+.btn-view-paper-dark:hover,
+.btn-view-code-dark:hover {
+  color: var(--textColor);
 }
