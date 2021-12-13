@@ -1,0 +1,110 @@
+#publications {
+  background-color: rgb(209, 209, 209);
+  /* height: 800px; */
+  width: 100%;
+  flex-direction: column;
+}
+
+.grainseg-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #08061f;
+}
+
+.grainseg-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.grainseg-content {
+  color: white;
+  opacity: 0.8;
+  width: 500px;
+  /* border-radius: 10px; */
+  padding-left: 40px;
+  border-left: 1px solid white;
+}
+
+.grainseg-content p {
+  margin: 8px 0px;
+  font-size: 16px;
+}
+
+/* .journal {
+  font-size: 16px;
+} */
+
+.paper-title {
+  font-size: 32px;
+}
+
+.authors {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* .paper-description {
+  font-size: 14px;
+} */
+
+.paper-btn-wrapper {
+  /* width: 100%; */
+  /* justify-content: flex-start; */
+  /* background-color: pink; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.paper-btn-wrapper a {
+  margin: 0px 10px;
+}
+
+#image {
+  height: 100%;
+}
+
+.oripred-container {
+  width: 100%;
+  height: 750px;
+  width: 1200px;
+}
+
+#divisor {
+  background-color: blue;
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+  border-right: 2px solid white;
+}
+
+figure {
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.btn-view-paper,
+.btn-view-code {
+  border: 1px solid white;
+  border-radius: 0.5em;
+  padding: 5px 15px;
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btn-view-paper:hover,
+.btn-view-code:hover {
+  opacity: 1;
+  color: white;
+}
