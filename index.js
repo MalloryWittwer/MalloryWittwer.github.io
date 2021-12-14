@@ -22,7 +22,7 @@ const animatedLoop = (start, end, speed, callable) => {
 }
 
 const setImageGrain = (x) => {
-  image.setAttribute("src", `static/figs/seg_${x}.png`);
+  image.setAttribute("src", `static/figs2/seg_${x}.png`);
 }
 
 let ticking = false;
@@ -43,7 +43,7 @@ window.addEventListener("scroll", () => {
       };
 
       if (second_flag && imtop <= -wh) {
-        image.setAttribute("src", `static/figs/seg_2.png`);
+        image.setAttribute("src", `static/figs2/seg_2.png`);
         second_flag = false;
       };
 
@@ -53,7 +53,7 @@ window.addEventListener("scroll", () => {
       }
 
       if (first_flag && imtop > wh) {
-        image.setAttribute("src", `static/figs/seg_2.png`);
+        image.setAttribute("src", `static/figs2/seg_2.png`);
         first_flag = false;
       };
 
