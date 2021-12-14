@@ -1,25 +1,28 @@
 @import url("components/reset.css");
-@import url("components/navbar.css");
+/* @import url("components/navbar.css"); */
 @import url("components/header.css");
-@import url("components/footer.css");
+/* @import url("components/footer.css"); */
 @import url("components/publications.css");
+@import url("components/projects.css");
+@import url("components/about.css");
+@import url("components/contact.css");
 
 :root {
-  --PageBottomHeight: 180px;
-  --NAVheight: 80px;
-  --GlobalMargins: 2%;
-  --GlobalMaxWidth: 1100px;
+  /* --PageBottomHeight: 180px; */
+  /* --NAVheight: 80px; */
+  /* --GlobalMargins: 2%; */
+  /* --GlobalMaxWidth: 1100px; */
   --textColor: #333;
-  --themeColor: #94d041;
+  /* --themeColor: #94d041; */
 }
 
 a {
   color: var(--textColor);
 }
 
-a:hover {
+/* a:hover {
   color: var(--themeColor);
-}
+} */
 
 p {
   line-height: 2em;
@@ -40,23 +43,46 @@ body {
 
 h1,
 h2,
-h3 {
+h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 h1 {
-  font-size: 52px;
-  color: var(--themeColor);
-  line-height: 1.2em;
-  margin-bottom: 20px;
+  font-size: 102px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 10px;
+  color: black;
+  opacity: 0.5;
+  padding: 40px;
+  padding-bottom: 0px;
 }
 
-h2 {
+/* h2 {
   font-size: 46px;
   padding: 20px;
+} */
+
+/* Homepage */
+
+.home-subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: black;
+  opacity: 0.5;
+  padding: 40px;
 }
 
-main {
-  background-color: violet;
+.home-main {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.home-main ul li {
+  display: inline-block;
+  padding: 10px 30px;
 }

@@ -9,7 +9,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="static/icon.png" type="image/png" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,107 +18,17 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <a id="nav-home" href="#">
-          <img src="static/icon.svg" alt="MW icon" id="home-avatar" />
-          Home
-        </a>
-        <a
-          id="nav-theme"
-          href="https://en.wikipedia.org/wiki/Moon"
-          target="_blank"
-          ><i class="fas fa-moon"></i
-        ></a>
-      </div>
-    </nav>
-    <header class="centered-flex">
-      <h1>Coming Soon!</h1>
-      <p>
-        My website is under construction. Come back again in the future!<br />
-        In the meantime, you can check out a list of my favourite podcasts
-        <a
-          href="https://mwittwer.notion.site/Fantastic-podcasts-and-where-to-find-them-12c0223e6a12457ba9717a66514043d8"
-          ,
-          target="_blank"
-          >here</a
-        >. Enjoy!
-      </p>
-    </header>
-    <main>
-      <section id="publications" class="centered-flex">
-        <h2>Publications</h2>
-
-        <div class="grainseg-container centered-flex">
-          <p class="publication-date">2021</p>
-          <div class="grainseg-content">
-            <p class="authors">
-              M. Wittwer, B. Gaskey, M. Seita | Materials Characterization 174
-            </p>
-            <h3 class="paper-title">
-              Self-supervised microstructure segmentation
-            </h3>
-            <p class="paper-description">
-              In this paper, we demonstrate how an automated segmentation
-              algorithm can be trained on directional reflectance data, leading
-              to faster and easier separation of grains.
-            </p>
-            <div class="paper-btn-wrapper">
-              <a href="#" class="btn-view-paper">View Paper</a>
-              <a href="#" class="btn-view-code">View Code</a>
-            </div>
-          </div>
-          <img src="static/figs2/seg_2.png" alt="" id="seg-image" />
-        </div>
-
-        <div class="oripred-container centered-flex">
-          <p class="publication-date-dark">2021</p>
-          <div class="oripred-content">
-            <p class="authors-dark">
-              M. Wittwer, M. Seita | npj Computational Materials
-            </p>
-            <h3 class="paper-title">
-              Crystal orientation mapping by machine learning
-            </h3>
-            <p class="paper-description">
-              In this paper, we demonstrate how an automated segmentation
-              algorithm can be trained on directional reflectance data, leading
-              to faster and easier separation of grains.
-            </p>
-            <div class="paper-btn-wrapper">
-              <a href="#" class="btn-view-paper-dark">View Paper</a>
-              <a href="#" class="btn-view-code-dark">View Code</a>
-            </div>
-          </div>
-          <div class="figure-wrapper centered-flex">
-            <figure
-              id="figure"
-              style="
-                background-image: linear-gradient(
-                    rgba(0, 0, 0, 0.1),
-                    rgba(0, 0, 0, 0.05)
-                  ),
-                  url('static/assets/before.png');
-              "
-            >
-              <div
-                id="divisor"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.1),
-                      rgba(0, 0, 0, 0.05)
-                    ),
-                    url('static/assets/after.png');
-                "
-              ></div>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <section id="#projects">
-        <h2>Projects</h2>
-      </section>
+    <main class="centered-flex home-main">
+      <h1>Mallory Wittwer</h1>
+      <h3 class="home-subtitle">Materials science | Machine learning | Web development</h3>
+      <ul>
+        <li><a href="pages/about.html" class="home-tab">About</a></li>
+        <li><a href="pages/publications.html" class="home-tab">Publications</a></li>
+        <li><a href="pages/projects.html" class="home-tab">Projects</a></li>
+        <li><a href="pages/contact.html" class="home-tab">Contact</a></li>
+      </ul>
     </main>
+    <!--
     <footer class="centered-flex">
       <ul>
         <li>
@@ -142,6 +51,6 @@
         <p>&copy; Mallory Wittwer (2021)</p>
       </div>
     </footer>
-    <script type="text/javascript" src="index.js"></script>
+    -->
   </body>
 </html>

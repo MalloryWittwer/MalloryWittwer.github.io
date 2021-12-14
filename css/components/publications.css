@@ -11,6 +11,7 @@
   height: 600px;
   background-color: #08061f;
   position: relative;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .publication-date {
@@ -56,6 +57,7 @@
   align-items: center;
   background-color: #e9e9e9;
   position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .publication-date-dark {
@@ -183,4 +185,12 @@ figure {
 .btn-view-paper-dark:hover,
 .btn-view-code-dark:hover {
   color: var(--textColor);
+}
+
+.temp {
+  width: 100%;
+  background-color: pink;
+  height: 600px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #08061f;
 }
