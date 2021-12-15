@@ -1,38 +1,38 @@
 @import url("components/reset.css");
-/* @import url("components/navbar.css"); */
 @import url("components/header.css");
-/* @import url("components/footer.css"); */
+@import url("components/footer.css");
 @import url("components/publications.css");
 @import url("components/projects.css");
 @import url("components/about.css");
-@import url("components/contact.css");
 
 :root {
-  /* --PageBottomHeight: 180px; */
-  /* --NAVheight: 80px; */
-  /* --GlobalMargins: 2%; */
-  /* --GlobalMaxWidth: 1100px; */
-  --textColor: #333;
-  /* --themeColor: #94d041; */
+  --textColor: #111;
+  --lightText: white;
+  --darkBG: #08061f;
+  --lightBG: white;
+  --lightDeco: rgba(255, 255, 255, 0.25);
+  --darkDeco: rgba(0, 0, 0, 0.25);
 }
 
-a {
+a, a:hover {
   color: var(--textColor);
+  /* color: var(--lightText); */
 }
 
-/* a:hover {
-  color: var(--themeColor);
-} */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  
+  color: var(--textColor);
+  background-color: var(--lightBG);
+  
+  /* color: var(--lightText);
+  background-color: var(--darkBG); */
+}
 
 p {
   line-height: 2em;
   font-size: 18px;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  color: var(--textColor);
-  background-color: rgb(245, 245, 245);
 }
 
 .centered-flex {
@@ -46,6 +46,7 @@ h2,
 h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  opacity: 0.6;
 }
 
 h1 {
@@ -53,16 +54,9 @@ h1 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 10px;
-  color: black;
-  opacity: 0.5;
   padding: 40px;
   padding-bottom: 0px;
 }
-
-/* h2 {
-  font-size: 46px;
-  padding: 20px;
-} */
 
 /* Homepage */
 
@@ -70,7 +64,6 @@ h1 {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 10px;
-  color: black;
   opacity: 0.5;
   padding: 40px;
 }
@@ -85,4 +78,22 @@ h1 {
 .home-main ul li {
   display: inline-block;
   padding: 10px 30px;
+}
+
+.copyrights {
+  width: 100%;
+  background-color: #eee;
+  height: 150px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+}
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  width: 100%;
+  background-color: pink;
+  height: 600px;
 }

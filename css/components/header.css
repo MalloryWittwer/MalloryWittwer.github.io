@@ -1,6 +1,4 @@
 header {
-  /* background-color: #08061f; */
-  background-color: white;
   height: 300px;
   width: 100%;
   display: flex;
@@ -13,15 +11,15 @@ header h2 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 10px;
-  color: var(--textColor);
-  opacity: 0.5;
   display: inline-block;
   text-align: center;
   flex-grow: 1;
 }
 
 nav {
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  /* border-right: 1px solid var(--lightDeco); */
+  border-right: 1px solid var(--darkDeco);
+
   height: 100%;
 }
 
@@ -33,9 +31,43 @@ header ul li {
   text-decoration: none;
   padding: 5px 15px;
   opacity: 0.7;
+  transition: 0.3s;
 }
 
 .home-tab:hover {
   opacity: 1;
+}
+
+.sidebar {
+  width: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 28px;
+  cursor: pointer;
   color: var(--textColor);
+  background-color: var(--lightBG);
+  opacity: 0.7;
+  border: none;
+}
+
+.openbtn:hover {
+    opacity: 1;
+}
+
+#navbar-open-btn {
+  padding: 0px 20px;
+  position: relative;
+  background-color: var(--lightBG);
+  height: 100%;
 }
