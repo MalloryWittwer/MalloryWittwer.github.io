@@ -9,9 +9,16 @@
   --textColor: #111;
   --lightText: white;
   --darkBG: #08061f;
+  --darkBGN: #242424;
   --lightBG: white;
+  --superlightBG: rgb(250, 250, 250);
   --lightDeco: rgba(255, 255, 255, 0.25);
   --darkDeco: rgba(0, 0, 0, 0.25);
+  --blue: #96ABD7;
+  --green: #BCD796;
+  --orange: #D7B696;
+  --red: #d35f5f;
+
 }
 
 a, a:hover {
@@ -24,7 +31,7 @@ body {
   font-family: "Open Sans", sans-serif;
   
   color: var(--textColor);
-  background-color: var(--lightBG);
+  /* background-color: var(--lightBG); */
   
   /* color: var(--lightText);
   background-color: var(--darkBG); */
@@ -43,57 +50,46 @@ p {
 
 h1,
 h2,
-h3, h4, h5 {
+h3, 
+h4, 
+h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   opacity: 0.6;
 }
 
-h1 {
+.main {
+  z-index: 2;
+}
+
+section {
+  /* border-top: 1px solid var(--darkDeco); */
+  background-color: white;
+  width: 100%;
+}
+
+.section-divider {
+  /* width: 100%; */
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 10px;
+  display: inline-block;
+  /* text-align: center; */
+  background-color: yellowgreen;
+  padding: 40px;
+}
+
+.info-title {
+  color: var(--lightText);
   font-size: 102px;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 10px;
-  padding: 40px;
-  padding-bottom: 0px;
-}
+  padding: 60px;
+  flex-grow: 1;
+  text-align: center;
 
-/* Homepage */
-
-.home-subtitle {
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  opacity: 0.5;
-  padding: 40px;
-}
-
-.home-main {
-  width: 100%;
-  height: 100vh;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-
-.home-main ul li {
-  display: inline-block;
-  padding: 10px 30px;
-}
-
-.copyrights {
-  width: 100%;
-  background-color: #eee;
-  height: 150px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  opacity: 0.7;
-}
-
-.placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.7;
-  width: 100%;
-  background-color: pink;
-  height: 600px;
+  /* position: sticky;
+  top: 80px; */
 }

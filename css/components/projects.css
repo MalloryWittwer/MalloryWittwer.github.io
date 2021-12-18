@@ -1,69 +1,100 @@
-.pj-container {
-  width: 100%;
-  align-items: center;
-  position: relative;
-  border-top: 1px solid var(--darkDeco);
-  min-height: 400px;
-  padding-bottom: 30px;
-}
-
-.pj-container h3 {
-  padding: 30px;
-  font-size: 42px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
 .sd-wrapper {
   margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sd-item {
-  width: 400px;
-  min-height: 350px;
+  width: 800px;
+  height: 350px;
+  border: 2px solid var(--darkDeco);
   border-radius: 10px;
-  /* border: 1px solid var(--darkDeco); */
-  position: relative;
   overflow: hidden;
-  background-color: rgb(212, 212, 212);
-  flex-direction: column;
+  margin: 20px;
 }
 
 .sd-image {
-  /* position: absolute;
-  top: 0px; */
-  width: 100%;
+  width: 350px;
+  height: 350px;
+  background-color: rgb(199, 199, 199);
+  background-size: contain;
 }
 
+/* .sd-header {
+  background-color: yellow;
+} */
+
 .sd-content {
-    /* position: absolute;
-    bottom: 0px; */
-    width: 100%;
-    height: 100%;
-    flex-grow: 1;
+  width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sd-category {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.6;
+  padding: 0px 20px;
+  display: inline-block;
 }
 
 .sd-content h5 {
-    text-align: center;
-    padding: 15px;
+  padding: 10px 20px;
+  margin: 5px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 5px;
+  background-color: var(--darkDeco);
+  align-self: center;
 }
 
-/* .sd-btn-wrapper {
-} */
+.sd-skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: 10px 15px;
+  font-size: 14px;
+}
+
+.sd-skills li {
+  background-color: var(--superlightBG);
+  border: 1px solid var(--darkDeco);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 2px;
+  opacity: 0.8;
+}
+
+.sd-about {
+  font-size: 14px;
+  padding: 5px 20px;
+  line-height: 1.2em;
+  opacity: 0.8;
+  max-height: 80px;
+  text-align: justify;
+  /* overflow-y: scroll; */
+}
 
 .sd-btn {
-    margin: 10px 15px;
-    padding: 10px 15px;
-    border-radius: 0.5em;
-    border: 1px solid var(--darkDeco);
-    text-decoration: none;
-    opacity: 0.7;
+  margin: 15px 20px;
+  margin-right: 0px;
+  padding: 10px 15px;
+  border-radius: 0.5em;
+  border: 2px solid var(--darkDeco);
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: 14px;
+  background-color: var(--superlightBG);
 }
 
 .sd-btn:hover {
-    opacity: 1;
+  opacity: 1;
 }

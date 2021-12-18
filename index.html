@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/d07c517a13.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="static/icon.png" type="image/png" />
+    <!-- <link rel="icon" href="static/icon.png" type="image/png" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,18 +18,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="centered-flex home-main">
-      <h1>Mallory Wittwer</h1>
+    <div class="header">
+      <h1 class="home-title">Mallory Wittwer</h1>
       <h3 class="home-subtitle">
         Materials science | Machine learning | Web development
       </h3>
-      <ul>
-        <li><a href="pages/about.html" class="home-tab">About</a></li>
-        <li>
-          <a href="pages/publications.html" class="home-tab">Publications</a>
-        </li>
-        <li><a href="pages/projects.html" class="home-tab">Projects</a></li>
-      </ul>
-    </main>
+      <nav>
+        <ul class="sidebar">
+          <li><a href="pages/about.html" class="home-tab">Info</a></li>
+          <li><a href="pages/publications.html" class="home-tab">Publications</a></li>
+          <li><a href="pages/projects.html" class="home-tab">Projects</a></li>
+          <li><a href="pages/contact" class="home-tab">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>

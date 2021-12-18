@@ -1,18 +1,19 @@
+.pb-content-container {
+    background-color: var(--darkBG);
+    box-shadow: 0px 0px 10px var(--lightDeco);
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 80px;
+    color: var(--lightText);
+}
+
 .pb-container {
   width: 100%;
-  height: 600px;
+  height: 500px;
   align-items: center;
   position: relative;
-}
-
-.pb-container-dark {
-  background-color: var(--darkBG);
-  border-top: 2px solid var(--lightDeco)
-}
-
-.pb-container-light {
-  background-color: var(--lightBG);
-  border-top: 2px solid var(--darkDeco);
+  justify-content: space-between;
+  margin: 40px 0px;
 }
 
 .pb-date {
@@ -23,16 +24,25 @@
   font-size: 62px;
   font-weight: 100;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--textColor);
+  line-height: 0.8em;
+}
+
+.pb-date span {
+  font-size: 24px;
 }
 
 .pb-date-light {
   color: var(--lightText);
-  background-color: var(--darkBG);
+  /* background-color: var(--darkBG); */
 }
 
 .pb-date-dark {
   color: var(--textColor);
-  background-color: var(--lightBG);
+  /* background-color: var(--lightBG); */
 }
 
 .pb-date-left {
@@ -47,19 +57,19 @@
   width: 500px;
   padding: 30px 60px;
   margin: 40px 10px;
-  z-index: 10;
+  z-index: 20;
   position: relative;
   opacity: 0.8;
+  border: 2px solid var(--lightDeco);
 }
 
 .pb-content-light {
-  border: 1px solid var(--textColor);
+  /* border: 1px solid var(--textColor); */
   background-color: var(--lightBG);
 }
 
 .pb-content-dark {
   color: var(--lightText);
-  border: 1px solid var(--lightDeco);
   background-color: var(--darkBG);
 }
 
@@ -76,6 +86,16 @@
   left: 0px;
   height: 100%;
   width: 800px;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.figure-wrapper-right {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 800px;
+  padding: 20px;
 }
 
 #seg-image {
@@ -111,7 +131,7 @@ figure {
   opacity: 0.9;
 }
 
-.pb-content h3 {
+.pb-title {
   font-size: 32px;
   opacity: 0.9;
   margin-top: 16px;
@@ -140,48 +160,18 @@ figure {
 
 /* BUTTONS */
 
-.paper-btn-wrapper .btn-view-code, .paper-btn-wrapper .btn-view-code-dark {
+.btn-light {
   margin: 0px 10px;
-}
-
-.btn-view-paper,
-.btn-view-code,
-.btn-view-paper-dark,
-.btn-view-code-dark {
   border-radius: 0.5em;
   padding: 5px 15px;
   text-decoration: none;
   opacity: 0.7;
-}
-
-.btn-view-paper,
-.btn-view-code {
   border: 1px solid var(--lightDeco);
+  color: var(--lightText);
 }
 
-.btn-view-paper-dark,
-.btn-view-code-dark {
-  border: 1px solid var(--darkDeco);
-}
-
-.btn-view-paper:hover,
-.btn-view-code:hover,
-.btn-view-paper-dark:hover,
-.btn-view-code-dark:hover {
+.btn-light:hover {
+  border: 1px solid var(--lightDeco);
+  color: var(--lightText);
   opacity: 1;
-}
-
-.btn-view-paper,
-.btn-view-code {
-  color: var(--lightText);
-}
-
-.btn-view-paper:hover,
-.btn-view-code:hover {
-  color: var(--lightText);
-}
-
-.btn-view-paper-dark:hover,
-.btn-view-code-dark:hover {
-  color: var(--textColor);
 }

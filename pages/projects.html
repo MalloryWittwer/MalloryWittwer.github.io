@@ -17,150 +17,129 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-
   <body>
-    <header>
-      <nav class="centered-flex">
+    <div class="main">
+      <nav class="myNav">
+        <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
+        &#9776;
+      </button> -->
         <ul id="mySidebar" class="sidebar">
           <li><a href="../index.html" class="home-tab">Home</a></li>
-          <li><a href="about.html" class="home-tab">About</a></li>
+          <li><a href="about.html" class="home-tab">Info</a></li>
           <li><a href="publications.html" class="home-tab">Publications</a></li>
-          <li><a href="projects.html" class="home-tab">Projects</a></li>
+          <li><a href="#" class="home-tab">Projects</a></li>
+          <li><a href="#" class="home-tab">Contact</a></li>
         </ul>
-        <div id="navbar-open-btn" class="centered-flex">
-          <button id="sidebar-btn" class="openbtn" onclick="openNav()">
-            &#9776;
-          </button>
-        </div>
+        <p class="home-tab-mw">Mallory Wittwer</p>
       </nav>
-      <h2>Projects</h2>
-    </header>
-    <main>
-      <section class="pj-container">
-        <h3>Demonstrators</h3>
-        <div class="sd-wrapper">
-          <div class="sd-item centered-flex">
-            <img
-              src="../static/assets/ipf-demo.png"
-              alt="IPF Plot"
-              class="sd-image"
-            />
-            <div class="sd-content">
-              <h5>Interactive crystallography</h5>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn">Demo</a>
-                <a href="#" class="sd-btn">Code</a>
+      <section>
+        <div class="about-main">
+          <h2 class="info-title">Projects</h2>
+
+          <div class="sd-wrapper">
+            <div class="sd-item centered-flex">
+              <div
+                class="sd-image"
+                style="background-image: url('static/assets/ipf-demo.png')"
+              ></div>
+              <div class="sd-content">
+                <div class="sd-header">
+                  <p class="sd-category">Demonstrator</p>
+                  <h5>Interactive crystallography</h5>
+                  <ul class="sd-skills">
+                    <li>Data viz</li>
+                    <li>Python</li>
+                    <li>Dash</li>
+                    <li>Matplotlib</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                <p class="sd-about">
+                  A web-based visualization of the orientation distribution of
+                  the disorientation angle in a face-centered cubic material.
+                  The value of the property is averaged locally in the
+                  orientation space, within bins defined by the stereographic
+                  projection of a Fibonacci sphere.
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-sign-out-alt"></i> Demo</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="sd-item centered-flex">
-            <img
-              src="../static/assets/actuator-app.png"
-              alt="IPF Plot"
-              class="sd-image"
-            />
-            <div class="sd-content">
-              <h5>Piezoelectric actuator design</h5>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn">Demo</a>
-                <a href="#" class="sd-btn">Code</a>
+
+            <div class="sd-item centered-flex">
+              <div class="sd-image"></div>
+              <div class="sd-content">
+                <div class="sd-header">
+                  <p class="sd-category">Demonstrator</p>
+                  <h5>Interactive crystallography</h5>
+                  <ul class="sd-skills">
+                    <li>Visualization</li>
+                    <li>Python</li>
+                    <li>Dash</li>
+                    <li>Matplotlib</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                <p class="sd-about">
+                  A web-based visualization of the orientation distribution of
+                  the disorientation angle in a face-centered cubic material.
+                  The value of the property is averaged locally in the
+                  orientation space, within bins defined by the stereographic
+                  projection of a Fibonacci sphere.
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-sign-out-alt"></i> Demo</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="sd-item centered-flex">
-            <img
-              src="../static/assets/peek-app.png"
-              alt="IPF Plot"
-              class="sd-image"
-            />
-            <div class="sd-content">
-              <h5>3D-printed laminate mechanics</h5>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn">Demo</a>
-                <a href="#" class="sd-btn">Code</a>
+
+            <div class="sd-item centered-flex">
+              <div class="sd-image"></div>
+              <div class="sd-content">
+                <div class="sd-header">
+                  <p class="sd-category">Demonstrator</p>
+                  <h5>Interactive crystallography</h5>
+                  <ul class="sd-skills">
+                    <li>Visualization</li>
+                    <li>Python</li>
+                    <li>Dash</li>
+                    <li>Matplotlib</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                <p class="sd-about">
+                  A web-based visualization of the orientation distribution of
+                  the disorientation angle in a face-centered cubic material.
+                  The value of the property is averaged locally in the
+                  orientation space, within bins defined by the stereographic
+                  projection of a Fibonacci sphere.
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-sign-out-alt"></i> Demo</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
-      <section class="pj-container">
-        <h3>Web platforms</h3>
-        <div class="sd-wrapper">
-          <div class="sd-item centered-flex">
-            <h5>Crowdair</h5>
-          </div>
-          <div class="sd-item centered-flex">
-            <h5>Herbnb</h5>
-          </div>
-        </div>
-      </section>
-      <section class="pj-container">
-        <h3>Prototypes</h3>
-      </section>
-    </main>
-    <footer class="contact-main">
-      <div class="earth centered-flex">Rotating Earth in Three.js</div>
-      <div class="contact-details">
-        <a href="https://www.linkedin.com/in/m-wittwer/" target="_blank"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/MalloryWittwer" target="_blank"
-          ><i class="fa fa-github"></i
-        ></a>
-        <a href="mailto: mallory.wittwer@gmail.com"
-          ><i class="fa fa-envelope"></i
-        ></a>
-      </div>
-      <div class="contact-container">
-        <form
-          id="contact_form"
-          action="https://formspree.io/f/xayvypbr"
-          method="POST"
-          enctype="multipart/form-data"
-        >
-          <div class="row">
-            <input
-              id="name"
-              class="input"
-              name="name"
-              type="text"
-              value=""
-              size="30"
-              placeholder="Your name"
-            /><br />
-            <span id="name_validation" class="error_message"></span>
-          </div>
-          <div class="row">
-            <input
-              id="email"
-              class="input"
-              name="email"
-              type="text"
-              value=""
-              size="30"
-              placeholder="Your email"
-            /><br />
-            <span id="email_validation" class="error_message"></span>
-          </div>
-          <div class="row">
-            <textarea
-              id="message"
-              class="input"
-              name="message"
-              rows="7"
-              cols="30"
-              placeholder="How can I help you?"
-            ></textarea
-            ><br />
-            <span id="message_validation" class="error_message"></span>
-          </div>
-          <input id="submit_button" type="submit" value="Send" />
-        </form>
-      </div>
-    </footer>
-    <div class="copyrights centered-flex">
-      <p>&copy; Mallory Wittwer (2021)</p>
     </div>
-    <script type="text/javascript" src="../scripts/navbar.js"></script>
+    <script type="text/javascript" src="../../scripts/navbar.js"></script>
   </body>
 </html>
