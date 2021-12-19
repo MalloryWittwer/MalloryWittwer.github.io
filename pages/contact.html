@@ -18,120 +18,128 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div class="main">
-      <nav class="myNav">
-        <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
+    <nav class="myNav">
+      <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
         &#9776;
       </button> -->
-        <ul id="mySidebar" class="sidebar">
-          <li><a href="../index.html" class="home-tab">Home</a></li>
-          <li><a href="about.html" class="home-tab">Info</a></li>
-          <li><a href="publications.html" class="home-tab">Publications</a></li>
-          <li><a href="projects.html" class="home-tab">Projects</a></li>
-          <li><a href="contact.html" class="home-tab">Contact</a></li>
-        </ul>
-        <p class="home-tab-mw">Mallory Wittwer</p>
-      </nav>
-      <section>
-        <div class="about-main">
-          <h2 class="info-title">Contact</h2>
-          <div class="contact-main">
-            <div class="contact-wrapper">
-
-              <div class="earth-card centered-flex">
-                <div class="address">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p>La Chaux-de-Fonds<br>Switzerland</p>
-                </div>
-                <canvas id="earth"></canvas>
+      <ul class="sidebar">
+        <li><a href="../index.html" class="home-tab">Home</a></li>
+        <li><a href="about.html" class="home-tab">Info</a></li>
+        <li><a href="publications.html" class="home-tab">Publications</a></li>
+        <li><a href="projects.html" class="home-tab">Projects</a></li>
+        <li><a href="contact.html" class="home-tab">Contact</a></li>
+      </ul>
+      <p class="home-tab-mw">Mallory Wittwer</p>
+    </nav>
+    <section>
+      <div class="main-container">
+        <h2 class="info-title">Contact</h2>
+        <div class="content-container main-contact">
+          <div class="contact-wrapper">
+            <div class="earth-card centered-flex">
+              <div class="address">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>La Chaux-de-Fonds<br />Switzerland</p>
               </div>
+              <canvas id="earth"></canvas>
+            </div>
 
-              <div class="contact-details">
+            <div class="contact-details">
+              <table>
+                <tr>
+                  <td>Phone</td>
+                  <td>+41 76 497 06 53</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>mallory.wittwer@gmail.com</td>
+                </tr>
+              </table>
 
-                <table>
-                  <tr>
-                    <td>Phone</td>
-                    <td>+41 76 497 06 53</td>
-                  </tr>
-                  <tr>
-                    <td>Email</td>
-                    <td>mallory.wittwer@gmail.com</td>
-                  </tr>
-                </table>
-
-                <div class="social">
-                  <a href="https://www.linkedin.com/in/m-wittwer/" target="_blank" class="social-link">
-                    <i class="fa fa-linkedin"></i><br>
-                    <p>Linkedin</p>
-                  </a>
-
-                  <a href="https://github.com/MalloryWittwer" target="_blank" class="social-link">
-                    <i class="fa fa-github"></i><br>
-                    <p>Github</p>
-                  </a>
-
-                  <a href="https://medium.com/@mallory.wittwer" target="_blank" class="social-link">
-                    <i class="fab fa-medium"></i><br>
-                    <p>Medium</p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="form-container">
-                <form
-                  id="contact_form"
-                  action="https://formspree.io/f/xayvypbr"
-                  method="POST"
-                  enctype="multipart/form-data"
+              <div class="social">
+                <a
+                  href="https://www.linkedin.com/in/m-wittwer/"
+                  target="_blank"
+                  class="social-link"
                 >
-                  <div class="row">
-                    <input
-                      id="name"
-                      class="input"
-                      name="name"
-                      type="text"
-                      value=""
-                      size="30"
-                      placeholder="Your name"
-                    /><br />
-                    <span id="name_validation" class="error_message"></span>
-                  </div>
-                  <div class="row">
-                    <input
-                      id="email"
-                      class="input"
-                      name="email"
-                      type="text"
-                      value=""
-                      size="30"
-                      placeholder="Your email"
-                    /><br />
-                    <span id="email_validation" class="error_message"></span>
-                  </div>
-                  <div class="row">
-                    <textarea
-                      id="message"
-                      class="input"
-                      name="message"
-                      rows="7"
-                      cols="30"
-                      placeholder="How can I help you?"
-                    ></textarea
-                    ><br />
-                    <span id="message_validation" class="error_message"></span>
-                  </div>
-                  <input id="submit_button" type="submit" value="Send" />
-                </form>
+                  <i class="fa fa-linkedin"></i><br />
+                  <p>Linkedin</p>
+                </a>
+
+                <a
+                  href="https://github.com/MalloryWittwer"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fa fa-github"></i><br />
+                  <p>Github</p>
+                </a>
+
+                <a
+                  href="https://medium.com/@mallory.wittwer"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fab fa-medium"></i><br />
+                  <p>Medium</p>
+                </a>
               </div>
+            </div>
+
+            <div class="form-container">
+              <form
+                id="contact_form"
+                action="https://formspree.io/f/xayvypbr"
+                method="POST"
+                enctype="multipart/form-data"
+              >
+                <div class="row">
+                  <input
+                    id="name"
+                    class="input"
+                    name="name"
+                    type="text"
+                    value=""
+                    size="30"
+                    placeholder="Your name"
+                  /><br />
+                  <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <input
+                    id="email"
+                    class="input"
+                    name="email"
+                    type="text"
+                    value=""
+                    size="30"
+                    placeholder="Your email"
+                  /><br />
+                  <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <textarea
+                    id="message"
+                    class="input"
+                    name="message"
+                    rows="7"
+                    cols="30"
+                    placeholder="How can I help you?"
+                  ></textarea
+                  ><br />
+                  <span id="message_validation" class="error_message"></span>
+                </div>
+                <input id="submit_button" type="submit" value="Send" />
+              </form>
             </div>
           </div>
         </div>
-      </section>
-      <div class="copyrights centered-flex">
-        <p>&copy; Mallory Wittwer (2021)</p>
       </div>
+    </section>
+    <div class="copyrights centered-flex">
+      <p>&copy; Mallory Wittwer (2021)</p>
     </div>
-    <script type="text/javascript" src="../../scripts/navbar.js"></script>
+    <!-- <script type="text/javascript" src="../../scripts/navbar.js"></script> -->
     <script type="text/javascript" src="../../scripts/three.js"></script>
     <script type="text/javascript" src="../../scripts/earth.js"></script>
   </body>
