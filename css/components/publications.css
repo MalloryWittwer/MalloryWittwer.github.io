@@ -3,8 +3,8 @@
     box-shadow: 0px 0px 10px var(--lightDeco);
     width: 100%;
     max-width: 1200px;
-    margin-bottom: 80px;
     color: var(--lightText);
+    border-radius: 5px;
 }
 
 .pb-container {
@@ -26,13 +26,16 @@
   z-index: 5;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: var(--textColor);
+  align-items: flex-start;
+  color: var(--darkText);
   line-height: 0.8em;
 }
 
 .pb-date span {
   font-size: 24px;
+  line-height: 1em;
+  padding: 8px;
+
 }
 
 .pb-date-light {
@@ -41,7 +44,7 @@
 }
 
 .pb-date-dark {
-  color: var(--textColor);
+  color: var(--darkText);
   /* background-color: var(--lightBG); */
 }
 
@@ -51,6 +54,7 @@
 
 .pb-date-right {
   right: 0px;
+  align-items: flex-end;
 }
 
 .pb-content {
@@ -64,7 +68,7 @@
 }
 
 .pb-content-light {
-  /* border: 1px solid var(--textColor); */
+  /* border: 1px solid var(--darkText); */
   background-color: var(--lightBG);
 }
 
@@ -75,10 +79,12 @@
 
 .pb-content-left {
   left: 12%;
+  top: 8%;
 }
 
 .pb-content-right {
   right: 12%;
+  top: 8%;
 }
 
 .figure-wrapper {

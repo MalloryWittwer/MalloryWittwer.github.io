@@ -10,18 +10,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: sticky;
-  top: 0px;
-  z-index: -1; */
+  /* TODO: Add a background image */
+}
+
+.home-title, .home-subtitle, .info-title {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: 0px 0px 4px var(--lightDeco);
 }
 
 .home-title {
   font-size: 102px;
-  text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 10px;
   padding-bottom: 0px;
-
   /* background: linear-gradient(to left, var(--green), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -30,29 +31,19 @@
 
 .home-subtitle {
   font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  padding: 40px;
-  /* padding-bottom: 120px; */
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 /* NAVBAR */
 
 nav {
-  /* border-right: 1px solid var(--darkDeco); */
-  /* height: 100vh; */
-  /* background-color: var(--superlightBG); */
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 100%;
   position: sticky;
   top: 0px;
-  /* background-color: red; */
   z-index: 100;
-  /* margin-bottom: 150px; */
 }
 
 .myNav {
@@ -63,52 +54,28 @@ nav {
 }
 
 .sidebar {
-  /* background-color: red; */
-  /* width: 0; */
-  /* width: 100%; */
-  /* z-index: 1; */
-  transition: 0.5s;
-  height: 80px;
+  /* transition: 0.5s; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
-
-  /* background-color: var(--superlightBG); */
-  /* background-color: var(--lightText); */
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-/* #mySidebar {
-  background-color: rgb(99, 94, 94);
-} */
-
-.home-tab {
+.home-tab, .home-tab-mw {
   color: var(--lightText);
-  /* color: var(--darkBGN); */
-
   text-decoration: none;
   margin: 30px;
-  /* padding: 30px; */
-  /* margin: 0px 2px; */
   opacity: 0.8;
   transition: 0.3s;
-}
-
-.home-tab-mw {
-  color: var(--lightText);
-  margin: 30px;
-  opacity: 0.7;
 }
 
 .home-tab:hover {
   color: var(--lightText);
   opacity: 1;
-  text-shadow: 1px 1px 4px var(--lightDeco);
+  text-shadow: 0px 0px 4px var(--lightDeco);
 }
 
-#navbar-open-btn {
+/* #navbar-open-btn {
   padding: 0px 20px;
   height: 100%;
   z-index: 10;
@@ -123,7 +90,7 @@ nav {
   margin: 20px 0px;
   font-size: 28px;
   cursor: pointer;
-  color: var(--textColor);
+  color: var(--darkText);
   background-color: var(--superlightBG);
   border-radius: 50%;
   opacity: 0.7;
@@ -132,4 +99,4 @@ nav {
 
 .openbtn:hover {
   opacity: 1;
-}
+} */

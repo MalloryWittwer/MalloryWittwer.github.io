@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>About</title>
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/d07c517a13.js"
@@ -28,227 +28,111 @@
           <li><a href="about.html" class="home-tab">Info</a></li>
           <li><a href="publications.html" class="home-tab">Publications</a></li>
           <li><a href="projects.html" class="home-tab">Projects</a></li>
-          <li><a href="#" class="home-tab">Contact</a></li>
+          <li><a href="contact.html" class="home-tab">Contact</a></li>
         </ul>
         <p class="home-tab-mw">Mallory Wittwer</p>
       </nav>
       <section>
         <div class="about-main">
-          <h2 class="info-title">Publications</h2>
-          <div class="pb-content-container">
+          <h2 class="info-title">Contact</h2>
+          <div class="contact-main">
+            <div class="contact-wrapper">
 
-            <div class="pb-container pb-container-dark centered-flex">
-              <p class="pb-date pb-date-light pb-date-right"><span>december</span>2021</p>
-              <div class="pb-content pb-content-dark pb-content-left">
-                <p class="authors authors-light">
-                  M. Wittwer, M. Seita | npj Computational Materials
-                </p>
-                <h4 class="pb-title">
-                  Crystal orientation mapping by machine learning
-                </h4>
-                <p class="paper-description">
-                  In this paper, we demonstrate how an automated segmentation
-                  algorithm can be trained on directional reflectance data,
-                  leading to faster and easier separation of grains.
-                </p>
-                <div class="paper-btn-wrapper">
-                  <a href="#" class="btn-light">View Paper</a>
-                  <a href="#" class="btn-light">View Code</a>
+              <div class="earth-card centered-flex">
+                <div class="address">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>La Chaux-de-Fonds<br>Switzerland</p>
+                </div>
+                <canvas id="earth"></canvas>
+              </div>
+
+              <div class="contact-details">
+
+                <table>
+                  <tr>
+                    <td>Phone</td>
+                    <td>+41 76 497 06 53</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>mallory.wittwer@gmail.com</td>
+                  </tr>
+                </table>
+
+                <div class="social">
+                  <a href="https://www.linkedin.com/in/m-wittwer/" target="_blank" class="social-link">
+                    <i class="fa fa-linkedin"></i><br>
+                    <p>Linkedin</p>
+                  </a>
+
+                  <a href="https://github.com/MalloryWittwer" target="_blank" class="social-link">
+                    <i class="fa fa-github"></i><br>
+                    <p>Github</p>
+                  </a>
+
+                  <a href="https://medium.com/@mallory.wittwer" target="_blank" class="social-link">
+                    <i class="fab fa-medium"></i><br>
+                    <p>Medium</p>
+                  </a>
                 </div>
               </div>
 
-              <div class="figure-wrapper centered-flex">
-                <figure
-                  id="figure"
-                  style="
-                    background-image: linear-gradient(
-                        rgba(0, 0, 0, 0.2),
-                        rgba(0, 0, 0, 0.2)
-                      ),
-                      url('../static/assets/before.png');
-                  "
+              <div class="form-container">
+                <form
+                  id="contact_form"
+                  action="https://formspree.io/f/xayvypbr"
+                  method="POST"
+                  enctype="multipart/form-data"
                 >
-                  <div
-                    id="divisor"
-                    style="
-                      background-image: linear-gradient(
-                          rgba(0, 0, 0, 0.2),
-                          rgba(0, 0, 0, 0.2)
-                        ),
-                        url('../static/assets/after.png');
-                    "
-                  ></div>
-                </figure>
+                  <div class="row">
+                    <input
+                      id="name"
+                      class="input"
+                      name="name"
+                      type="text"
+                      value=""
+                      size="30"
+                      placeholder="Your name"
+                    /><br />
+                    <span id="name_validation" class="error_message"></span>
+                  </div>
+                  <div class="row">
+                    <input
+                      id="email"
+                      class="input"
+                      name="email"
+                      type="text"
+                      value=""
+                      size="30"
+                      placeholder="Your email"
+                    /><br />
+                    <span id="email_validation" class="error_message"></span>
+                  </div>
+                  <div class="row">
+                    <textarea
+                      id="message"
+                      class="input"
+                      name="message"
+                      rows="7"
+                      cols="30"
+                      placeholder="How can I help you?"
+                    ></textarea
+                    ><br />
+                    <span id="message_validation" class="error_message"></span>
+                  </div>
+                  <input id="submit_button" type="submit" value="Send" />
+                </form>
               </div>
-            </div>
-
-            <div class="pb-container pb-container-dark centered-flex">
-              <p class="pb-date pb-date-light pb-date-left"><span>march</span>2021</p>
-              <div class="pb-content pb-content-dark pb-content-right">
-                <p class="authors authors-light">
-                  M. Wittwer, B. Gaskey, M. Seita | Materials Characterization
-                  174
-                </p>
-                <h4 class="pb-title">
-                  Self-supervised microstructure segmentation
-                </h4>
-                <p class="paper-description">
-                  In this paper, we demonstrate how an automated segmentation
-                  algorithm can be trained on directional reflectance data,
-                  leading to faster and easier separation of grains.
-                </p>
-                <div class="paper-btn-wrapper">
-                  <a href="#" class="btn-light">View Paper</a>
-                  <a href="#" class="btn-light">View Code</a>
-                </div>
-              </div>
-                <img src="../static/figs2/seg_2.png" alt="" id="seg-image" />
             </div>
           </div>
         </div>
       </section>
-    </div>
-    <script type="text/javascript" src="../../scripts/navbar.js"></script>
-    <script type="text/javascript" src="../scripts/publications.js"></script>
-  </body>
-</html>
-
-
-<section>
-    <!-- <h2 class="section-divider centered-flex">Projects</h2> -->
-    <div class="about-main">
-      <h2 class="info-title">Projects</h2>
-      <div class="sd-wrapper">
-        <div class="sd-item centered-flex">
-          <div
-            class="sd-image"
-            style="background-image: url('static/assets/ipf-demo.png')"
-          ></div>
-          <div class="sd-content">
-            <div class="sd-header">
-              <p class="sd-category">Demonstrator</p>
-              <h5>Interactive crystallography</h5>
-              <ul class="sd-skills">
-                <li>Data viz</li>
-                <li>Python</li>
-                <li>Dash</li>
-                <li>Matplotlib</li>
-                <li>HTML/CSS</li>
-              </ul>
-            </div>
-            <p class="sd-about">
-              A web-based visualization of the orientation distribution of
-              the disorientation angle in a face-centered cubic material.
-              The value of the property is averaged locally in the
-              orientation space, within bins defined by the stereographic
-              projection of a Fibonacci sphere.
-            </p>
-            <div class="sd-btn-wrapper centered-flex">
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-sign-out-alt"></i> Demo</a
-              >
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-code"></i> Code</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="sd-item centered-flex">
-          <div class="sd-image"></div>
-          <div class="sd-content">
-            <div class="sd-header">
-              <p class="sd-category">Demonstrator</p>
-              <h5>Interactive crystallography</h5>
-              <ul class="sd-skills">
-                <li>Visualization</li>
-                <li>Python</li>
-                <li>Dash</li>
-                <li>Matplotlib</li>
-                <li>HTML/CSS</li>
-              </ul>
-            </div>
-            <p class="sd-about">
-              A web-based visualization of the orientation distribution of
-              the disorientation angle in a face-centered cubic material.
-              The value of the property is averaged locally in the
-              orientation space, within bins defined by the stereographic
-              projection of a Fibonacci sphere.
-            </p>
-            <div class="sd-btn-wrapper centered-flex">
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-sign-out-alt"></i> Demo</a
-              >
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-code"></i> Code</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="sd-item centered-flex">
-          <div class="sd-image"></div>
-          <div class="sd-content">
-            <div class="sd-header">
-              <p class="sd-category">Demonstrator</p>
-              <h5>Interactive crystallography</h5>
-              <ul class="sd-skills">
-                <li>Visualization</li>
-                <li>Python</li>
-                <li>Dash</li>
-                <li>Matplotlib</li>
-                <li>HTML/CSS</li>
-              </ul>
-            </div>
-            <p class="sd-about">
-              A web-based visualization of the orientation distribution of
-              the disorientation angle in a face-centered cubic material.
-              The value of the property is averaged locally in the
-              orientation space, within bins defined by the stereographic
-              projection of a Fibonacci sphere.
-            </p>
-            <div class="sd-btn-wrapper centered-flex">
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-sign-out-alt"></i> Demo</a
-              >
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-code"></i> Code</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="sd-item centered-flex">
-          <div class="sd-image"></div>
-          <div class="sd-content">
-            <div class="sd-header">
-              <p class="sd-category">Demonstrator</p>
-              <h5>Interactive crystallography</h5>
-              <ul class="sd-skills">
-                <li>Visualization</li>
-                <li>Python</li>
-                <li>Dash</li>
-                <li>Matplotlib</li>
-                <li>HTML/CSS</li>
-              </ul>
-            </div>
-            <p class="sd-about">
-              A web-based visualization of the orientation distribution of
-              the disorientation angle in a face-centered cubic material.
-              The value of the property is averaged locally in the
-              orientation space, within bins defined by the stereographic
-              projection of a Fibonacci sphere.
-            </p>
-            <div class="sd-btn-wrapper centered-flex">
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-sign-out-alt"></i> Demo</a
-              >
-              <a href="#" class="sd-btn"
-                ><i class="fas fa-code"></i> Code</a
-              >
-            </div>
-          </div>
-        </div>
+      <div class="copyrights centered-flex">
+        <p>&copy; Mallory Wittwer (2021)</p>
       </div>
     </div>
-  </section>
+    <script type="text/javascript" src="../../scripts/navbar.js"></script>
+    <script type="text/javascript" src="../../scripts/three.js"></script>
+    <script type="text/javascript" src="../../scripts/earth.js"></script>
+  </body>
+</html>

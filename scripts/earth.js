@@ -38,7 +38,7 @@ function resize() {
 
 function animate() {
   resize();
-  mesh.rotation.y += 0.003;
+  mesh.rotation.y += 0.002;
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
 }
