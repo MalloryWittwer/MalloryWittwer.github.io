@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Mallory Wittwer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/d07c517a13.js"
       crossorigin="anonymous"
@@ -18,6 +19,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <canvas id="header-canvas"> </canvas>
+    <div class="black-outline-top"></div>
     <header>
       <h1 class="home-title">Mallory Wittwer</h1>
       <h3 class="home-subtitle">
@@ -25,12 +28,22 @@
       </h3>
       <nav>
         <ul class="sidebar">
-          <li><a href="pages/about.html" class="home-tab">Info</a></li>
-          <li><a href="pages/publications.html" class="home-tab">Publications</a></li>
-          <li><a href="pages/projects.html" class="home-tab">Projects</a></li>
-          <li><a href="pages/contact.html" class="home-tab">Contact</a></li>
+          <li><a href="pages/about.html" class="home-tab-h">Info</a></li>
+          <li>
+            <a href="pages/publications.html" class="home-tab-h"
+              >Publications</a
+            >
+          </li>
+          <li><a href="pages/projects.html" class="home-tab-h">Projects</a></li>
+          <li><a href="pages/contact.html" class="home-tab-h">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <div class="black-outline-bot"></div>
   </body>
+  <script type="text/javascript" src="../../scripts/three.js"></script>
+  <script type="text/javascript" src="../scripts/home.js"></script>
+  <script>
+    $(document).ready(() => $("body").fadeIn());
+  </script>
 </html>

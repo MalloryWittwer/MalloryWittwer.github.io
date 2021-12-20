@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/d07c517a13.js"
       crossorigin="anonymous"
@@ -18,6 +19,8 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <canvas id="header-canvas">
+    </canvas>
     <nav class="myNav">
       <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
         &#9776;
@@ -139,8 +142,9 @@
     <div class="copyrights centered-flex">
       <p>&copy; Mallory Wittwer (2021)</p>
     </div>
-    <!-- <script type="text/javascript" src="../../scripts/navbar.js"></script> -->
-    <script type="text/javascript" src="../../scripts/three.js"></script>
-    <script type="text/javascript" src="../../scripts/earth.js"></script>
   </body>
+  <script type="text/javascript" src="../scripts/three.js"></script>
+  <script type="text/javascript" src="../scripts/contact.js"></script>
+  <!-- <script type="text/javascript" src="../scripts/earth.js"></script> -->
+  <script>$(document).ready(() => $("body").fadeIn());</script>
 </html>

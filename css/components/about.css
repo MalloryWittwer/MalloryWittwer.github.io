@@ -1,4 +1,4 @@
-.main-about {
+#main-about {
   max-width: 800px;
 }
 
@@ -26,18 +26,20 @@
 .btn-bold {
   border: none;
   margin: 20px 0px;
-  opacity: 0.8;
+  /* opacity: 1.0; */
   cursor: pointer;
   font-weight: 100;
   font-size: 24px;
   background: transparent;
   color: var(--blue);
   transition: 0.3s;
+  /* background-color: var(--lightDeco); */
+  /* width: 100%; */
 }
 
 .btn-bold:hover {
-  opacity: 1;
-  text-shadow: 0px 0px 4px var(--lightDeco);
+  /* opacity: 1; */
+  text-shadow: 0px 0px 1px var(--blue);
 }
 
 /* .interests {

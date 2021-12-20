@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/d07c517a13.js"
       crossorigin="anonymous"
@@ -19,6 +20,7 @@
   </head>
 
   <body>
+    <canvas id="header-canvas"> </canvas>
     <nav class="myNav">
       <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
         &#9776;
@@ -55,11 +57,10 @@
                 </ul>
               </div>
               <p class="project-about">
-                A web-based visualization of the orientation distribution of the
-                disorientation angle in a face-centered cubic material. The
-                value of the property is averaged locally in the orientation
-                space, within bins defined by the stereographic projection of a
-                Fibonacci sphere.
+                A web-based visualization of the orientation distribution of
+                misorientation in a face-centered cubic material. The property
+                is averaged locally in the orientation space, within bins
+                defined by the stereographic projection of a Fibonacci sphere.
               </p>
               <div class="sd-btn-wrapper centered-flex">
                 <a href="#" class="sd-btn"
@@ -143,6 +144,10 @@
     <div class="copyrights centered-flex">
       <p>&copy; Mallory Wittwer (2021)</p>
     </div>
-    <!-- <script type="text/javascript" src="../../scripts/navbar.js"></script> -->
   </body>
+  <script type="text/javascript" src="../../scripts/three.js"></script>
+  <script type="text/javascript" src="../scripts/header.js"></script>
+  <script>
+    $(document).ready(() => $("body").fadeIn());
+  </script>
 </html>
