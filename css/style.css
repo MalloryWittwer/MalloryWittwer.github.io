@@ -12,7 +12,7 @@
   /* --darkBG: #3f3d50; */
   --darkBG: #2e2d39;
   --navBG: #1c1a32;
-  --contentContainer:  #33314a;
+  --contentContainer: #33314a;
 
   /* --lightDeco: rgba(255, 255, 255, 0.25); */
   /* --lightDeco: #33314a; */
@@ -52,16 +52,25 @@
 
 body {
   display: none;
-}
-
-body, a, a:hover {
   font-family: "Open Sans", sans-serif;
-
   background-color: var(--darkBG);
   color: var(--lightText);
+}
 
-  /* background-color: var(--lightBG);
-  color: var(--darkText); */
+a,
+a:hover {
+  color: var(--lightText );
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.inline-link {
+  color: var(--blue);
+}
+
+.inline-link:hover {
+  color: var(--blue);
+  text-shadow: 0px 0px 1px var(--blue);
 }
 
 p {

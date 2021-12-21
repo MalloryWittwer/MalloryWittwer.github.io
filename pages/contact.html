@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <canvas id="header-canvas">
-    </canvas>
+    <canvas id="header-canvas"> </canvas>
     <nav class="myNav">
       <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
         &#9776;
@@ -40,15 +39,22 @@
         <div class="content-container main-contact">
           <div class="contact-wrapper">
             <div class="earth-card centered-flex">
-              <div class="address">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>La Chaux-de-Fonds<br />Switzerland</p>
-              </div>
+              <table id="address-table">
+                <tr>
+                  <td>Address</td>
+                  <td>La Chaux-de-Fonds, <br />Switzerland</td>
+                </tr>
+                <tr>
+                  <td>Local time</td>
+                  <td><span id="local-time">undefined</span></td>
+                </tr>
+              </table>
+
               <canvas id="earth"></canvas>
             </div>
 
             <div class="contact-details">
-              <table>
+              <table id="contacts-table">
                 <tr>
                   <td>Phone</td>
                   <td>+41 76 497 06 53</td>
@@ -146,5 +152,7 @@
   <script type="text/javascript" src="../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/contact.js"></script>
   <!-- <script type="text/javascript" src="../scripts/earth.js"></script> -->
-  <script>$(document).ready(() => $("body").fadeIn());</script>
+  <script>
+    $(document).ready(() => $("body").fadeIn());
+  </script>
 </html>

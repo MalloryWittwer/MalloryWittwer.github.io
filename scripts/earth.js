@@ -20,7 +20,7 @@ function init() {
 
   THREE.ImageUtils.crossOrigin = "";
   material.map = THREE.ImageUtils.loadTexture(
-    "../static/assets/earth-shader-marked.png"
+    "../static/assets/blue-planet.png"
   );
 
   mesh = new THREE.Mesh(geometry, material);

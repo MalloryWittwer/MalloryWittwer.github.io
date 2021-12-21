@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <canvas id="header-canvas">
-    </canvas>
+    <canvas id="header-canvas"> </canvas>
     <nav class="myNav">
       <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
         &#9776;
@@ -39,9 +38,7 @@
         <h2 class="info-title">Publications</h2>
         <div class="content-container" id="main-pb">
           <div class="pb-container centered-flex">
-            <p class="pb-date pb-date-right">
-              <span>december</span>2021
-            </p>
+            <p class="pb-date pb-date-right"><span>december</span>2021</p>
             <div class="pb-content pb-content-left">
               <p class="authors">
                 M. Wittwer, M. Seita | npj Computational Materials
@@ -50,13 +47,14 @@
                 Crystal orientation mapping by machine learning
               </h4>
               <p class="paper-description">
-                In this paper, we demonstrate how an automated segmentation
-                algorithm can be trained on directional reflectance data,
-                leading to faster and easier separation of grains.
+                We present a method based on a convolutional neural network to
+                perform crystallographic characterization with high throughput
+                from directional reflectance data. Our method complements the
+                capabilities of state-of-the-art techniques, such as EBSD.
               </p>
               <div class="paper-btn-wrapper">
-                <a href="#" class="btn-light">View Paper</a>
-                <a href="#" class="btn-light">View Code</a>
+                <a href="#" target="_blank" class="btn-light">View Paper</a>
+                <a href="https://github.com/MalloryWittwer/drm_ml_demo" target="_blank" class="btn-light">View Code</a>
               </div>
             </div>
 
@@ -86,9 +84,7 @@
           </div>
 
           <div class="pb-container centered-flex">
-            <p class="pb-date pb-date-left">
-              <span>march</span>2021
-            </p>
+            <p class="pb-date pb-date-left"><span>march</span>2021</p>
             <div class="pb-content pb-content-right">
               <p class="authors">
                 M. Wittwer, B. Gaskey, M. Seita | Materials Characterization 174
@@ -97,13 +93,14 @@
                 Self-supervised microstructure segmentation
               </h4>
               <p class="paper-description">
-                In this paper, we demonstrate how an automated segmentation
-                algorithm can be trained on directional reflectance data,
-                leading to faster and easier separation of grains.
+                We demonstrate that automated grain segmentation can be achieved
+                from directional reflectance data and a machine learning model.
+                Our algotithm performs microstructure analysis with high
+                throughput and minimal human supervision.
               </p>
               <div class="paper-btn-wrapper">
-                <a href="#" class="btn-light">View Paper</a>
-                <a href="#" class="btn-light">View Code</a>
+                <a href="https://www.sciencedirect.com/science/article/pii/S104458032100108X" target="_blank" class="btn-light">View Paper</a>
+                <a href="https://github.com/MalloryWittwer/LRC-MRM_grain_segmentation_demo" target="_blank" class="btn-light">View Code</a>
               </div>
             </div>
             <img src="../static/figs2/seg_2.png" alt="" id="seg-image" />
@@ -118,5 +115,7 @@
   <script type="text/javascript" src="../../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/header.js"></script>
   <script type="text/javascript" src="../scripts/publications.js"></script>
-  <script>$(document).ready(() => $("body").fadeIn());</script>
+  <script>
+    $(document).ready(() => $("body").fadeIn());
+  </script>
 </html>
