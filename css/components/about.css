@@ -25,9 +25,65 @@
 
 .btn-bold {
   margin: 20px 0px;
-  font-size: 24px;
-  color: var(--blue);
+  font-size: 18px;
   transition: 0.3s;
+  width: 100%;
+  background-color: var(--darkBG);
+  border: 2px solid var(--lightDeco);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.btn-bold i {
+  padding: 0px 2px;
+}
+
+.btn-bold:hover {
+  background-color: var(--blue);
+}
+
+.places-worked {
+  background-color: var(--darkBG);
+  border: 2px solid var(--lightDeco);
+  margin: 20px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.places-worked img {
+  width: 95%;
+  padding: 20px;
+}
+
+.cv-container {
+  background-color: var(--darkBG);
+  border: 2px solid var(--lightDeco);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  align-self: center;
+  transition: 0.3s;
+}
+
+.cv-container:hover {
+  background-color: var(--blue);
+}
+
+.cv-download {
+  text-align: center;
+}
+
+.cv-download p {
+  font-size: 16px;
+}
+
+.cv-download i {
+  font-size: 42px;
 }
 
 /* .interests {
