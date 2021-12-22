@@ -20,10 +20,10 @@
   </head>
   <body>
     <canvas id="header-canvas"> </canvas>
-    <nav class="myNav">
-      <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
-        &#9776;
-      </button> -->
+    <div class="btn-nav" id="sidebar-btn">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <nav class="myNav" id="mySidebar">
       <ul class="sidebar">
         <li><a href="../index.html" class="home-tab">Home</a></li>
         <li><a href="about.html" class="home-tab">Info</a></li>
@@ -31,7 +31,8 @@
         <li><a href="projects.html" class="home-tab">Projects</a></li>
         <li><a href="contact.html" class="home-tab">Contact</a></li>
       </ul>
-      <p class="home-tab-mw">Mallory Wittwer</p>
+      <button class="closebtn" id="closenav" onclick="closeNav()">&#10006;</button>
+      <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
     </nav>
     <section>
       <div class="main-container">
@@ -141,6 +142,7 @@
   </body>
   <script type="text/javascript" src="../../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/header.js"></script>
+  <script type="text/javascript" src="../scripts/navbar.js"></script>
   <script type="text/javascript" src="../scripts/publications.js"></script>
   <script>
     $(document).ready(() => $("body").fadeIn());

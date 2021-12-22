@@ -20,10 +20,10 @@
   </head>
   <body>
     <canvas id="header-canvas"> </canvas>
-    <nav class="myNav">
-      <!-- <button id="sidebar-btn" class="openbtn" onclick="openNav()">
-        &#9776;
-      </button> -->
+    <div class="btn-nav" id="sidebar-btn">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </div>
+    <nav class="myNav" id="mySidebar">
       <ul class="sidebar">
         <li><a href="../index.html" class="home-tab">Home</a></li>
         <li><a href="about.html" class="home-tab">Info</a></li>
@@ -31,75 +31,69 @@
         <li><a href="projects.html" class="home-tab">Projects</a></li>
         <li><a href="contact.html" class="home-tab">Contact</a></li>
       </ul>
-      <p class="home-tab-mw">Mallory Wittwer</p>
+      <button class="closebtn" id="closenav" onclick="closeNav()">&#10006;</button>
+      <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
     </nav>
     <section>
       <div class="main-container">
         <h2 class="info-title">Contact</h2>
         <div class="content-container main-contact">
-          <!-- <p style="text-align: center; padding: 40px; padding-top: 60px">
-            Do you want to get in touch? Laboriosam velit aliquam hic a voluptas
-            alias esse molestiae ab quaerat ex.
-          </p> -->
           <div class="contact-wrapper">
-            <div class="earth-card centered-flex">
-              <table id="address-table">
-                <tr>
-                  <td>Address</td>
-                  <td>La Chaux-de-Fonds, <br />Switzerland</td>
-                </tr>
-                <tr>
-                  <td>Local time</td>
-                  <td><span id="local-time">undefined</span></td>
-                </tr>
-              </table>
+            <div class="flex-wrap-container">
+              <div class="contact-details">
+                <div class="table-wrapper centered-flex">
+                  <table id="address-table">
+                    <tr>
+                      <td>Address</td>
+                      <td>La Chaux-de-Fonds, Switzerland</td>
+                    </tr>
+                    <tr>
+                      <td>Phone</td>
+                      <td>+41 76 497 06 53</td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td>mallory.wittwer@gmail.com</td>
+                    </tr>
+                  </table>
+                </div>
 
-              <canvas id="earth"></canvas>
-            </div>
+                <div class="earth-canvas centered-flex">
+                  <canvas id="earth"></canvas>
+                  <p id="local-time-text">Local time: <span id="local-time">undefined</span></p>
+                </div>
 
-            <div class="contact-details">
-              <table id="contacts-table">
-                <tr>
-                  <td>Phone</td>
-                  <td>+41 76 497 06 53</td>
-                </tr>
-                <tr>
-                  <td>Email</td>
-                  <td>mallory.wittwer@gmail.com</td>
-                </tr>
-              </table>
+                <div class="social centered-flex">
+                  <a
+                    href="https://www.linkedin.com/in/m-wittwer/"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="fa fa-linkedin"></i><br />
+                    <p>Linkedin</p>
+                  </a>
 
-              <div class="social">
-                <a
-                  href="https://www.linkedin.com/in/m-wittwer/"
-                  target="_blank"
-                  class="social-link"
-                >
-                  <i class="fa fa-linkedin"></i><br />
-                  <p>Linkedin</p>
-                </a>
+                  <a
+                    href="https://github.com/MalloryWittwer"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="fa fa-github"></i><br />
+                    <p>Github</p>
+                  </a>
 
-                <a
-                  href="https://github.com/MalloryWittwer"
-                  target="_blank"
-                  class="social-link"
-                >
-                  <i class="fa fa-github"></i><br />
-                  <p>Github</p>
-                </a>
-
-                <a
-                  href="https://medium.com/@mallory.wittwer"
-                  target="_blank"
-                  class="social-link"
-                >
-                  <i class="fab fa-medium"></i><br />
-                  <p>Medium</p>
-                </a>
+                  <a
+                    href="https://medium.com/@mallory.wittwer"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="fab fa-medium"></i><br />
+                    <p>Medium</p>
+                  </a>
+                </div>
               </div>
             </div>
-
-            <div class="form-container">
+            <div class="form-container centered-flex">
               <form
                 id="contact_form"
                 action="https://formspree.io/f/xayvypbr"
@@ -155,7 +149,7 @@
   </body>
   <script type="text/javascript" src="../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/contact.js"></script>
-  <!-- <script type="text/javascript" src="../scripts/earth.js"></script> -->
+  <script type="text/javascript" src="../scripts/navbar.js"></script>
   <script>
     $(document).ready(() => $("body").fadeIn());
   </script>

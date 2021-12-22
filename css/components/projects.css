@@ -45,8 +45,10 @@
   display: block;
   width: 350px;
   height: 350px;
-  background-size: cover;
-  padding: 0px 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 10px;
 }
 
 .project-content {
