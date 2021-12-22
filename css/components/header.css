@@ -11,6 +11,7 @@
   width: 100%;
   position: absolute;
   opacity: 0.8;
+  transition: 0.3s;
 }
 
 .black-outline-top {
@@ -28,29 +29,36 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* TODO: ADD BACKGROUND IMAGE */
 }
 
 .home-title, .home-subtitle, .info-title {
   text-transform: uppercase;
   letter-spacing: 10px;
   text-shadow: 0px 0px 4px var(--lightDeco);
+  margin: 0px 60px;
 }
 
 .home-title {
-  font-size: 102px;
+  font-size: 7vw;
+  /* font-size: 102px; */
   font-weight: 300;
   padding-bottom: 0px;
   /* background: linear-gradient(to left, var(--green), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline; */
+  text-align: center;
+  padding-bottom: 40px;
+  transition: 0.3s;
 }
 
 .home-subtitle {
-  font-size: 16px;
-  padding-top: 40px;
-  padding-bottom: 80px;
+  /* font-size: 16px; */
+  font-size: 1.4vw;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 /* NAVBAR */
@@ -61,7 +69,13 @@ nav {
   justify-content: center;
   position: sticky;
   top: 0px;
+  width: 100%;
   z-index: 100;
+  transition: 0.3s;
+}
+
+#home-nav {
+  margin-top: 80px;
 }
 
 .myNav {
@@ -73,20 +87,23 @@ nav {
 
 .sidebar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 50%;
+  min-width: 500px;
+  height: 90px;
 }
 
 .home-tab, .home-tab-mw, .home-tab-h {
   text-decoration: none;
-  margin: 30px;
+  margin: 0px 30px;
   opacity: 0.9;
-  transition: 0.3s;
   background: none;
+  transition: 0.3s;
 }
 
 .home-tab-h {
-  margin: 50px;
+  margin: 0px 20px;
   font-size: 18px;
 }
 
@@ -96,28 +113,49 @@ nav {
   background: none;
 }
 
-/* #navbar-open-btn {
-  padding: 0px 20px;
-  height: 100%;
-  z-index: 10;
-  width: 150px;
+@media screen and (max-width: 768px) {
+  .black-outline-bot, .black-outline-top {
+    height: 0px;
+  }
+
+  .home-subtitle {
+    display: none;
+  }
 }
 
-.openbtn {
+@media screen and (max-width: 951px) {
+  .home-title {
+    font-size: 102px !important;
+  }
+}
+
+.btn-nav {
+  width: 100%;
+  z-index: -1;
+  transition: 0.3s;
   position: fixed;
   top: 0px;
-  left: 20px;
-  z-index: 20;
-  margin: 20px 0px;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--darkText);
-  background-color: var(--superlightBG);
-  border-radius: 50%;
-  opacity: 0.8;
-  border: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
-.openbtn:hover {
+.openbtn, .closebtn {
+  margin: 20px;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--lightText);  
+  background-color: var(--navBG);
+  border-radius: 50%;
+  opacity: 0.8;
+  border: 2px solid var(--lightDeco);
+}
+
+.openbtn:hover, .closebtn:hover {
   opacity: 1;
-} */
+}
+
+.closebtn {
+  display: none;
+  font-size: 22px;
+}

@@ -96,6 +96,8 @@ h5 {
 
 .info-title {
   font-size: 102px;
+  /* font-size: 7vw; */
+
   font-weight: 300;
   padding: 60px;
   text-align: center;
@@ -114,8 +116,6 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  /* background-color: inherit; */
 }
 
 .content-container {
