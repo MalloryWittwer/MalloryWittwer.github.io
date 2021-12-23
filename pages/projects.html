@@ -20,258 +20,286 @@
   </head>
 
   <body>
-    <canvas id="header-canvas"> </canvas>
-    <div class="btn-nav" id="sidebar-btn">
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div class="mobile-container centered-flex">
+      <div id="mobile-block">
+        <p>Mobile experience coming soon!</p>
+        <p>In the meantime, consider using a desktop. Thank you!</p>
+      </div>
     </div>
-    <nav class="myNav" id="mySidebar">
-      <ul class="sidebar">
-        <li><a href="../index.html" class="home-tab">Home</a></li>
-        <li><a href="about.html" class="home-tab">Info</a></li>
-        <li><a href="publications.html" class="home-tab">Publications</a></li>
-        <li><a href="projects.html" class="home-tab">Projects</a></li>
-        <li><a href="contact.html" class="home-tab">Contact</a></li>
-      </ul>
-      <button class="closebtn" id="closenav" onclick="closeNav()">&#10006;</button>
-      <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
-    </nav>
-    <section>
-      <div class="main-container">
-        <h2 class="info-title">Projects</h2>
-        <div class="content-container" id="main-projects">
-          <div class="project-item">
-            <div
-              class="project-image"
-              style="
-                background-image: url(../static/assets/ipf-trans.png);
-              "
-            ></div>
-            <div class="project-content">
-              <div class="project-header">
-                <p class="project-category">Web app</p>
-                <h5 class="project-title">Interactive crystallography</h5>
-                <ul class="skills">
-                  <li>Data viz</li>
-                  <li>Python</li>
-                  <li>Dash</li>
-                  <li>Matplotlib</li>
-                  <li>HTML/CSS</li>
-                </ul>
-              </div>
-              <p class="project-about">
-                A web-based tool to visualize the orientation distribution of a
-                crystallographic property in a face-centered cubic material. The
-                Inverse Pole Figure, which represents the orientation space, is
-                partitioned evenly using a method based on the stereographic
-                projection of a Fibonacci sphere.
-              </p>
-              <div class="sd-btn-wrapper centered-flex">
-                <a
-                  href="https://voronoi-ipf.herokuapp.com/"
-                  target="_blank"
-                  class="sd-btn"
-                  ><i class="fas fa-sign-out-alt"></i> Demo</a
-                >
-                <a
-                  href="https://github.com/MalloryWittwer/voronoi_IPF"
-                  target="_blank"
-                  class="sd-btn"
-                  ><i class="fas fa-code"></i> Code</a
-                >
+
+    <div class="global-container">
+      <canvas id="header-canvas"> </canvas>
+      <div class="btn-nav" id="sidebar-btn">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+      <nav class="myNav" id="mySidebar">
+        <ul class="sidebar">
+          <li><a href="../index.html" class="home-tab">Home</a></li>
+          <li><a href="about.html" class="home-tab">Info</a></li>
+          <li><a href="publications.html" class="home-tab">Publications</a></li>
+          <li><a href="projects.html" class="home-tab">Projects</a></li>
+          <li><a href="contact.html" class="home-tab">Contact</a></li>
+        </ul>
+        <button class="closebtn" id="closenav" onclick="closeNav()">
+          &#10006;
+        </button>
+        <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
+      </nav>
+      <section>
+        <div class="main-container">
+          <h2 class="info-title" id="projects-info-title">Projects</h2>
+          <div class="content-container" id="main-projects">
+            <div class="project-item">
+              <div
+                class="project-image"
+                style="background-image: url(../static/assets/ipf-trans.png)"
+              ></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <p class="project-category">Web app</p>
+                  <h5 class="project-title">Interactive crystallography</h5>
+                  <ul class="skills">
+                    <li>Data viz</li>
+                    <li>Python</li>
+                    <li>Dash</li>
+                    <li>Matplotlib</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                <p class="project-about">
+                  A web-based tool to visualize the orientation distribution of
+                  a crystallographic property in a face-centered cubic material.
+                  The Inverse Pole Figure, which represents the orientation
+                  space, is partitioned evenly using a method based on the
+                  stereographic projection of a Fibonacci sphere.
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a
+                    href="https://voronoi-ipf.herokuapp.com/"
+                    target="_blank"
+                    class="sd-btn"
+                    ><i class="fas fa-sign-out-alt"></i> Demo</a
+                  >
+                  <a
+                    href="https://github.com/MalloryWittwer/voronoi_IPF"
+                    target="_blank"
+                    class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="project-item">
-            <div
-              class="project-image"
-              style="
-                background-image: url(../static/assets/laminate-placeholder.png);
-              "
-            ></div>
-            <div class="project-content">
-              <div class="project-header">
-                <p class="project-category">Web app</p>
-                <h5 class="project-title">Fracture mechanics of composites</h5>
-                <ul class="skills">
-                  <li>Educational</li>
-                  <li>Python</li>
-                  <li>Dash</li>
-                  <li>Matplotlib</li>
-                  <li>HTML/CSS</li>
-                </ul>
-              </div>
-              <p class="project-about">
-                This interactive web application illustrates how, based on
-                laminate theory, the elastic modulus of a fiber-reinforced
-                composite, and its tensile strength, vary with the angle between
-                the fibers and an extnally applied unidirectional load.
-              </p>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn"
-                  ><i class="fas fa-sign-out-alt"></i> Demo</a
-                >
-                <a href="#" class="sd-btn"><i class="fas fa-code"></i> Code</a>
+            <div class="project-item">
+              <div
+                class="project-image"
+                style="
+                  background-image: url(../static/assets/laminate-placeholder.png);
+                "
+              ></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <p class="project-category">Web app</p>
+                  <h5 class="project-title">
+                    Fracture mechanics of composites
+                  </h5>
+                  <ul class="skills">
+                    <li>Educational</li>
+                    <li>Python</li>
+                    <li>Dash</li>
+                    <li>Matplotlib</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                <p class="project-about">
+                  This interactive web application illustrates how, based on
+                  laminate theory, the elastic modulus of a fiber-reinforced
+                  composite, and its tensile strength, vary with the angle
+                  between the fibers and an extnally applied unidirectional
+                  load.
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-sign-out-alt"></i> Demo</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="project-item">
-            <div
-              class="project-image"
-              style="
-                background-image: url(../static/assets/actuator-placeholder.png);
-              "
-            ></div>
-            <div class="project-content">
-              <div class="project-header">
-                <p class="project-category">Web app</p>
-                <h5 class="project-title">Designing piezoelectric actuators</h5>
-                <ul class="skills">
-                  <li>Data viz</li>
-                  <li>Python</li>
-                  <li>Dash</li>
-                  <li>Plotly</li>
-                  <li>HTML/CSS</li>
-                </ul>
-              </div>
-              <p class="project-about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                commodi fuga eum delectus nulla cupiditate ducimus? Totam saepe
-                obcaecati molestias itaque repudiandae nemo provident corrupti
-                modi sint cumque maiores rem, error, assumenda repellendus
-                architecto repellat explicabo eius laudantium ratione
-                praesentium!
-              </p>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn"
-                  ><i class="fas fa-sign-out-alt"></i> Demo</a
-                >
-                <a href="#" class="sd-btn"><i class="fas fa-code"></i> Code</a>
+            <div class="project-item">
+              <div
+                class="project-image"
+                style="
+                  background-image: url(../static/assets/actuator-placeholder.png);
+                "
+              ></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <p class="project-category">Web app</p>
+                  <h5 class="project-title">
+                    Designing piezoelectric actuators
+                  </h5>
+                  <ul class="skills">
+                    <li>Data viz</li>
+                    <li>Python</li>
+                    <li>Dash</li>
+                    <li>Plotly</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                <p class="project-about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  commodi fuga eum delectus nulla cupiditate ducimus? Totam
+                  saepe obcaecati molestias itaque repudiandae nemo provident
+                  corrupti modi sint cumque maiores rem, error, assumenda
+                  repellendus architecto repellat explicabo eius laudantium
+                  ratione praesentium!
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-sign-out-alt"></i> Demo</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="project-item">
-            <div
-              class="project-image"
-              style="
-                background-image: url(../static/assets/drm-placeholder.png);
-              "
-            ></div>
-            <div class="project-content">
-              <div class="project-header">
-                <p class="project-category">Software</p>
-                <h5 class="project-title">
-                  Microscopy analysis with integrated machine learning
-                </h5>
-                <ul class="skills">
-                  <li>Data viz</li>
-                  <li>Python</li>
-                  <li>Dash</li>
-                  <li>Plotly</li>
-                  <li>HTML/CSS</li>
-                </ul>
-              </div>
-              <p class="project-about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                commodi fuga eum delectus nulla cupiditate ducimus? Totam saepe
-                obcaecati molestias itaque repudiandae nemo provident corrupti
-                modi sint cumque maiores rem, error, assumenda repellendus
-                architecto repellat explicabo eius laudantium ratione
-                praesentium!
-              </p>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn"
-                  ><i class="fas fa-pen-alt"></i> Blog</a
-                >
-                <a href="#" class="sd-btn"><i class="fas fa-code"></i> Code</a>
+            <div class="project-item">
+              <div
+                class="project-image"
+                style="
+                  background-image: url(../static/assets/drm-placeholder.png);
+                "
+              ></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <p class="project-category">Software</p>
+                  <h5 class="project-title">
+                    Microscopy analysis with integrated machine learning
+                  </h5>
+                  <ul class="skills">
+                    <li>Data viz</li>
+                    <li>Python</li>
+                    <li>Dash</li>
+                    <li>Plotly</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+                </div>
+                <p class="project-about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  commodi fuga eum delectus nulla cupiditate ducimus? Totam
+                  saepe obcaecati molestias itaque repudiandae nemo provident
+                  corrupti modi sint cumque maiores rem, error, assumenda
+                  repellendus architecto repellat explicabo eius laudantium
+                  ratione praesentium!
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-pen-alt"></i> Blog</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="project-item">
-            <div
-              class="project-image"
-              style="
-                background-image: url(../static/assets/crowdair-placeholder.png);
-              "
-            ></div>
-            <div class="project-content">
-              <div class="project-header">
-                <p class="project-category">Web platform</p>
-                <h5 class="project-title">
-                  Trading on advances in science and technology
-                </h5>
-                <ul class="skills">
-                  <li>Full-stack</li>
-                  <li>Ruby on Rails</li>
-                  <li>PosgreSQL</li>
-                </ul>
-              </div>
-              <p class="project-about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                commodi fuga eum delectus nulla cupiditate ducimus? Totam saepe
-                obcaecati molestias itaque repudiandae nemo provident corrupti
-                modi sint cumque maiores rem, error, assumenda repellendus
-                architecto repellat explicabo eius laudantium ratione
-                praesentium!
-              </p>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn"
-                  ><i class="fas fa-sign-out-alt"></i> Demo</a
-                >
-                <a href="#" class="sd-btn"><i class="fas fa-code"></i> Code</a>
+            <div class="project-item">
+              <div
+                class="project-image"
+                style="
+                  background-image: url(../static/assets/crowdair-placeholder.png);
+                "
+              ></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <p class="project-category">Web platform</p>
+                  <h5 class="project-title">
+                    Trading on advances in science and technology
+                  </h5>
+                  <ul class="skills">
+                    <li>Full-stack</li>
+                    <li>Ruby on Rails</li>
+                    <li>PosgreSQL</li>
+                  </ul>
+                </div>
+                <p class="project-about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  commodi fuga eum delectus nulla cupiditate ducimus? Totam
+                  saepe obcaecati molestias itaque repudiandae nemo provident
+                  corrupti modi sint cumque maiores rem, error, assumenda
+                  repellendus architecto repellat explicabo eius laudantium
+                  ratione praesentium!
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-sign-out-alt"></i> Demo</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="project-item">
-            <div
-              class="project-image"
-              style="
-                background-image: url(../static/assets/material-placeholder.png);
-              "
-            ></div>
-            <div class="project-content">
-              <div class="project-header">
-                <p class="project-category">Machine learning</p>
-                <h5 class="project-title">
-                  AI-based generation of material shaders
-                </h5>
-                <ul class="skills">
-                  <li>3D rendering</li>
-                  <li>Python</li>
-                  <li>Tensorflow</li>
-                  <li>Blender</li>
-                </ul>
-              </div>
-              <p class="project-about">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                commodi fuga eum delectus nulla cupiditate ducimus? Totam saepe
-                obcaecati molestias itaque repudiandae nemo provident corrupti
-                modi sint cumque maiores rem, error, assumenda repellendus
-                architecto repellat explicabo eius laudantium ratione
-                praesentium!
-              </p>
-              <div class="sd-btn-wrapper centered-flex">
-                <a href="#" class="sd-btn"
-                  ><i class="fas fa-pen-alt"></i> Blog</a
-                >
-                <a href="#" class="sd-btn"><i class="fas fa-code"></i> Code</a>
+            <div class="project-item">
+              <div
+                class="project-image"
+                style="
+                  background-image: url(../static/assets/material-placeholder.png);
+                "
+              ></div>
+              <div class="project-content">
+                <div class="project-header">
+                  <p class="project-category">Machine learning</p>
+                  <h5 class="project-title">
+                    AI-based generation of material shaders
+                  </h5>
+                  <ul class="skills">
+                    <li>3D rendering</li>
+                    <li>Python</li>
+                    <li>Tensorflow</li>
+                    <li>Blender</li>
+                  </ul>
+                </div>
+                <p class="project-about">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  commodi fuga eum delectus nulla cupiditate ducimus? Totam
+                  saepe obcaecati molestias itaque repudiandae nemo provident
+                  corrupti modi sint cumque maiores rem, error, assumenda
+                  repellendus architecto repellat explicabo eius laudantium
+                  ratione praesentium!
+                </p>
+                <div class="sd-btn-wrapper centered-flex">
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-pen-alt"></i> Blog</a
+                  >
+                  <a href="#" class="sd-btn"
+                    ><i class="fas fa-code"></i> Code</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <div class="copyrights centered-flex">
+        <p>&copy; Mallory Wittwer (2021)</p>
       </div>
-    </section>
-    <div class="copyrights centered-flex">
-      <p>&copy; Mallory Wittwer (2021)</p>
     </div>
   </body>
   <script type="text/javascript" src="../../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/header.js"></script>
   <script type="text/javascript" src="../scripts/navbar.js"></script>
+  <script
+    type="text/javascript"
+    src="../scripts/mobile-block-global.js"
+  ></script>
   <script>
     $(document).ready(() => $("body").fadeIn());
   </script>

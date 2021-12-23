@@ -22,6 +22,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: red !important;
 }
 
 .home-title, .home-subtitle, .info-title {
@@ -34,20 +35,14 @@ header {
 .home-title {
   font-size: 7vw;
   white-space: nowrap;
-  /* font-size: 102px; */
   font-weight: 300;
-  padding-bottom: 0px;
-  /* background: linear-gradient(to left, var(--green), var(--blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline; */
   text-align: center;
+  padding-top: 40px;
   padding-bottom: 40px;
   transition: 0.3s;
 }
 
 .home-subtitle {
-  /* font-size: 16px; */
   font-size: 1.4vw;
   text-align: center;
   letter-spacing: 5px;
@@ -143,37 +138,4 @@ nav {
 .closebtn {
   display: none;
   font-size: 22px;
-}
-
-.mobile-container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#mobile-block {
-  position: fixed;
-  top: 50%;
-  border-radius: 5px;
-  width: 70%;
-  background-color: var(--darkBG);
-  border: 2px solid var(--lightDeco);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#mobile-block p {
-  padding: 8px 20px;
-  text-align: center;
-}
-
-#mobile-block p:first-child {
-  padding-top: 20px;
-  font-weight: bold;
-}
-
-#mobile-block p:last-child {
-  padding-bottom: 20px;
 }

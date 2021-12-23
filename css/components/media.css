@@ -18,11 +18,11 @@
   }
 
   .pb-content {
-      box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .paper-description {
-      display: none;
+    display: none;
   }
 
   .pb-content-left {
@@ -56,6 +56,12 @@
 
   .home-subtitle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #projects-info-title {
+    font-size: 64px !important;
   }
 }
 

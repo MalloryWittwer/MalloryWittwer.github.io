@@ -19,131 +19,144 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <canvas id="header-canvas"> </canvas>
-    <div class="btn-nav" id="sidebar-btn">
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div class="mobile-container centered-flex">
+      <div id="mobile-block">
+        <p>Mobile experience coming soon!</p>
+        <p>In the meantime, consider using a desktop. Thank you!</p>
+      </div>
     </div>
-    <nav class="myNav" id="mySidebar">
-      <ul class="sidebar">
-        <li><a href="../index.html" class="home-tab">Home</a></li>
-        <li><a href="about.html" class="home-tab">Info</a></li>
-        <li><a href="publications.html" class="home-tab">Publications</a></li>
-        <li><a href="projects.html" class="home-tab">Projects</a></li>
-        <li><a href="contact.html" class="home-tab">Contact</a></li>
-      </ul>
-      <button class="closebtn" id="closenav" onclick="closeNav()">&#10006;</button>
-      <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
-    </nav>
-    <section>
-      <div class="main-container">
-        <h2 class="info-title" id="pb-info-title">Publications</h2>
-        <div class="content-container" id="main-pb">
-          <p style="text-align: center">
-            For a complete overview of my academic track record, please refer to
-            my
-            <a
-              class="inline-link"
-              href="https://scholar.google.com/citations?user=nrYqvawAAAAJ&hl=fr"
-              target="_blank"
-              >Google Scholar</a
-            >
-            page.
-          </p>
 
-          <div class="pb-container centered-flex">
-            <p class="pb-date pb-date-right"><span>december</span>2021</p>
-            <div class="pb-content pb-content-left">
-              <p class="authors">
-                M. Wittwer, M. Seita | npj Computational Materials
-              </p>
-              <h4 class="pb-title">
-                Crystal orientation mapping by machine learning
-              </h4>
-              <p class="paper-description">
-                We present a method based on a convolutional neural network to
-                perform crystallographic characterization with high throughput
-                from directional reflectance data. Our method complements the
-                capabilities of state-of-the-art techniques, such as EBSD.
-              </p>
-              <div class="paper-btn-wrapper">
-                <a href="#" target="_blank" class="btn-light">View Paper</a>
-                <a
-                  href="https://github.com/MalloryWittwer/drm_ml_demo"
-                  target="_blank"
-                  class="btn-light"
-                  >View Code</a
-                >
-              </div>
-            </div>
-
-            <div class="figure-wrapper centered-flex">
-              <figure
-                id="figure"
-                style="
-                  background-image: linear-gradient(
-                      rgba(0, 0, 0, 0.2),
-                      rgba(0, 0, 0, 0.2)
-                    ),
-                    url('../static/assets/before.png');
-                "
+    <div class="global-container">
+      <canvas id="header-canvas"> </canvas>
+      <div class="btn-nav" id="sidebar-btn">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+      <nav class="myNav" id="mySidebar">
+        <ul class="sidebar">
+          <li><a href="../index.html" class="home-tab">Home</a></li>
+          <li><a href="about.html" class="home-tab">Info</a></li>
+          <li><a href="publications.html" class="home-tab">Publications</a></li>
+          <li><a href="projects.html" class="home-tab">Projects</a></li>
+          <li><a href="contact.html" class="home-tab">Contact</a></li>
+        </ul>
+        <button class="closebtn" id="closenav" onclick="closeNav()">
+          &#10006;
+        </button>
+        <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
+      </nav>
+      <section>
+        <div class="main-container">
+          <h2 class="info-title" id="pb-info-title">Publications</h2>
+          <div class="content-container" id="main-pb">
+            <p style="text-align: center">
+              For a complete overview of my academic track record, please refer
+              to my
+              <a
+                class="inline-link"
+                href="https://scholar.google.com/citations?user=nrYqvawAAAAJ&hl=fr"
+                target="_blank"
+                >Google Scholar</a
               >
-                <div
-                  id="divisor"
+              page.
+            </p>
+
+            <div class="pb-container centered-flex">
+              <p class="pb-date pb-date-right"><span>december</span>2021</p>
+              <div class="pb-content pb-content-left">
+                <p class="authors">
+                  M. Wittwer, M. Seita | npj Computational Materials
+                </p>
+                <h4 class="pb-title">
+                  Crystal orientation mapping by machine learning
+                </h4>
+                <p class="paper-description">
+                  We present a method based on a convolutional neural network to
+                  perform crystallographic characterization with high throughput
+                  from directional reflectance data. Our method complements the
+                  capabilities of state-of-the-art techniques, such as EBSD.
+                </p>
+                <div class="paper-btn-wrapper">
+                  <a href="#" target="_blank" class="btn-light">View Paper</a>
+                  <a
+                    href="https://github.com/MalloryWittwer/drm_ml_demo"
+                    target="_blank"
+                    class="btn-light"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+
+              <div class="figure-wrapper centered-flex">
+                <figure
+                  id="figure"
                   style="
                     background-image: linear-gradient(
                         rgba(0, 0, 0, 0.2),
                         rgba(0, 0, 0, 0.2)
                       ),
-                      url('../static/assets/after.png');
+                      url('../static/assets/before.png');
                   "
-                ></div>
-              </figure>
-            </div>
-          </div>
-
-          <div class="pb-container centered-flex">
-            <p class="pb-date pb-date-left"><span>march</span>2021</p>
-            <div class="pb-content pb-content-right">
-              <p class="authors">
-                M. Wittwer, B. Gaskey, M. Seita | Materials Characterization 174
-              </p>
-              <h4 class="pb-title">
-                Self-supervised microstructure segmentation
-              </h4>
-              <p class="paper-description">
-                We demonstrate that automated grain segmentation can be achieved
-                from directional reflectance data and a machine learning model.
-                Our algotithm performs microstructure analysis with high
-                throughput and minimal human supervision.
-              </p>
-              <div class="paper-btn-wrapper">
-                <a
-                  href="https://www.sciencedirect.com/science/article/pii/S104458032100108X"
-                  target="_blank"
-                  class="btn-light"
-                  >View Paper</a
                 >
-                <a
-                  href="https://github.com/MalloryWittwer/LRC-MRM_grain_segmentation_demo"
-                  target="_blank"
-                  class="btn-light"
-                  >View Code</a
-                >
+                  <div
+                    id="divisor"
+                    style="
+                      background-image: linear-gradient(
+                          rgba(0, 0, 0, 0.2),
+                          rgba(0, 0, 0, 0.2)
+                        ),
+                        url('../static/assets/after.png');
+                    "
+                  ></div>
+                </figure>
               </div>
             </div>
-            <img src="../static/figs2/seg_2.png" alt="" id="seg-image" />
+
+            <div class="pb-container centered-flex">
+              <p class="pb-date pb-date-left"><span>march</span>2021</p>
+              <div class="pb-content pb-content-right">
+                <p class="authors">
+                  M. Wittwer, B. Gaskey, M. Seita | Materials Characterization
+                  174
+                </p>
+                <h4 class="pb-title">
+                  Self-supervised microstructure segmentation
+                </h4>
+                <p class="paper-description">
+                  We demonstrate that automated grain segmentation can be
+                  achieved from directional reflectance data and a machine
+                  learning model. Our algotithm performs microstructure analysis
+                  with high throughput and minimal human supervision.
+                </p>
+                <div class="paper-btn-wrapper">
+                  <a
+                    href="https://www.sciencedirect.com/science/article/pii/S104458032100108X"
+                    target="_blank"
+                    class="btn-light"
+                    >View Paper</a
+                  >
+                  <a
+                    href="https://github.com/MalloryWittwer/LRC-MRM_grain_segmentation_demo"
+                    target="_blank"
+                    class="btn-light"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+              <img src="../static/figs2/seg_2.png" alt="" id="seg-image" />
+            </div>
           </div>
         </div>
+      </section>
+      <div class="copyrights centered-flex">
+        <p>&copy; Mallory Wittwer (2021)</p>
       </div>
-    </section>
-    <div class="copyrights centered-flex">
-      <p>&copy; Mallory Wittwer (2021)</p>
     </div>
   </body>
   <script type="text/javascript" src="../../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/header.js"></script>
   <script type="text/javascript" src="../scripts/navbar.js"></script>
   <script type="text/javascript" src="../scripts/publications.js"></script>
+  <script type="text/javascript" src="../scripts/mobile-block-global.js"></script>
   <script>
     $(document).ready(() => $("body").fadeIn());
   </script>

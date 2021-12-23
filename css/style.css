@@ -132,3 +132,37 @@ h5 {
 /* .global-container {
   width: 100%;
 } */
+
+.mobile-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-block {
+  position: fixed;
+  top: 50%;
+  border-radius: 5px;
+  width: 70%;
+  background-color: var(--darkBG);
+  border: 2px solid var(--lightDeco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+#mobile-block p {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+#mobile-block p:first-child {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#mobile-block p:last-child {
+  padding-bottom: 20px;
+}
