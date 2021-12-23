@@ -8,12 +8,21 @@
     width: 80%;
   }
 
-  #main-about {
+  #main-about,
+  #main-pb {
     max-width: 90%;
   }
 
   .about-card {
     margin: 40px !important;
+  }
+
+  .pb-content {
+      box-sizing: border-box;
+  }
+
+  .paper-description {
+      display: none;
   }
 
   .pb-content-left {
@@ -22,10 +31,6 @@
 
   .pb-content-right {
     right: 0%;
-  }
-
-  #main-pb {
-    max-width: 90%;
   }
 
   #pb-info-title {
@@ -56,7 +61,7 @@
 
 @media screen and (max-width: 540px) {
   .home-title {
-    font-size: 64px;
+    font-size: 48px;
   }
 
   p {

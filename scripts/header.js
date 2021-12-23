@@ -16,10 +16,10 @@ const init = () => {
   const material = new THREE.MeshPhongMaterial();
   const plane = new THREE.Mesh(geometry, material);
   scene.add(plane);
-  plane.rotation.z = 0.3;
+  // plane.rotation.z = 0.3;
 
   THREE.ImageUtils.crossOrigin = "";
-  material.map = THREE.ImageUtils.loadTexture("../static/assets/bg-try.png");
+  material.map = THREE.ImageUtils.loadTexture("../static/assets/bg-rotated.png");
 
   const color = 0xffffff;
   const intensity = 0.9;
@@ -54,8 +54,7 @@ const resize = () => {
 };
 
 const animate = () => {
-  // resize();
-  window.addEventListener('resize', resize, false);
+  resize();
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
 }

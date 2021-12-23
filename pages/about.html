@@ -19,103 +19,117 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <canvas id="header-canvas"> </canvas>
-    <div class="btn-nav" id="sidebar-btn">
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div class="mobile-container centered-flex">
+      <div id="mobile-block">
+        <p>Mobile experience coming soon!</p>
+        <p>In the meantime, consider using a desktop. Thank you!</p>
+      </div>
     </div>
-    <nav class="myNav" id="mySidebar">
-      <ul class="sidebar">
-        <li><a href="../index.html" class="home-tab">Home</a></li>
-        <li><a href="about.html" class="home-tab">Info</a></li>
-        <li><a href="publications.html" class="home-tab">Publications</a></li>
-        <li><a href="projects.html" class="home-tab">Projects</a></li>
-        <li><a href="contact.html" class="home-tab">Contact</a></li>
-      </ul>
-      <button class="closebtn" id="closenav" onclick="closeNav()">&#10006;</button>
-      <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
-    </nav>
-    <section>
-      <div class="main-container">
-        <h2 class="info-title">Info</h2>
-        <div class="content-container" id="main-about">
-          <div class="about-card">
-            <h5>About me</h5>
-            <p>
-              I am an independent web developer, materials scientist, and
-              machine learning engineer based in Switzerland. I specialize in
-              creating web-based demonstrators, data visualizations, and
-              software tools that enable scientists to showcase their work
-              effectively to the public and to the academic community. I love
-              creating interactive applications that make it possible to
-              understand technical concepts at a glance - because a web app is
-              worth a thousand equations! I am also trained in data science and
-              AI, and I am knowledgeable about climate tech, aerospace, and the
-              industry 4.0. Finally, I am a strong advocate of open science. I
-              am particularly interested in exploring how digital platforms can
-              be leveraged to support the scientific community.
-            </p>
-            <a href="projects.html" class="btn-bold">
-              <i class="fas fa-chevron-circle-right"></i>
-              See examples of projects
-            </a>
-          </div>
-          <div class="about-card">
-            <h5>Background</h5>
-            <p>
-              In 2018, I graduated from EPFL in Materials Science and
-              Engineering. I then learned data science and machine learning at
-              EPFL's Extension School. From 2018 to 2021, I was a research
-              associate under Prof. Matteo Seita at NTU in Singapore. I have
-              coordinated projects investigating how machine learning can be
-              applied to microscopy for high-throughput materials
-              characterization. I published
-              <a class="inline-link" href="publications.html">two papers</a> in
-              peer-reviewed scientific journals. I came back in Switzerland in
-              August 2021 and, in December, I completed Le Wagon's Full-stack
-              web development Bootcamp in 9 weeks.
-            </p>
-            <div class="places-worked">
-              <p>I worked / studied at:</p>
-              <div class="imgs-studied-container centered-flex">
-                <img src="../static/assets/im0.png" alt="epfl" />
-                <img src="../static/assets/im1.png" alt="esa" />
-                <img src="../static/assets/im2.png" alt="csem" />
-                <img src="../static/assets/im3.png" alt="ntu" />
-                <img src="../static/assets/im4.png" alt="epfl extension school" />
-                <img src="../static/assets/im5.png" alt="le wagon" />
-              </div>
-              <!-- <img src="../static/assets/places-worked.png" alt="Workplaces" /> -->
+
+    <div class="global-container">
+      <canvas id="header-canvas"> </canvas>
+      <div class="btn-nav" id="sidebar-btn">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+      <nav class="myNav" id="mySidebar">
+        <ul class="sidebar">
+          <li><a href="../index.html" class="home-tab">Home</a></li>
+          <li><a href="about.html" class="home-tab">Info</a></li>
+          <li><a href="publications.html" class="home-tab">Publications</a></li>
+          <li><a href="projects.html" class="home-tab">Projects</a></li>
+          <li><a href="contact.html" class="home-tab">Contact</a></li>
+        </ul>
+        <button class="closebtn" id="closenav" onclick="closeNav()">
+          &#10006;
+        </button>
+        <p class="home-tab-mw" id="mwittwer">Mallory Wittwer</p>
+      </nav>
+      <section>
+        <div class="main-container">
+          <h2 class="info-title">Info</h2>
+          <div class="content-container" id="main-about">
+            <div class="about-card">
+              <h5>About me</h5>
+              <p>
+                I am an independent web developer, materials scientist, and
+                machine learning engineer based in Switzerland. I specialize in
+                creating web-based demonstrators, data visualizations, and
+                software tools that enable scientists to showcase their work
+                effectively to the public and to the academic community. I love
+                creating interactive applications that make it possible to
+                understand technical concepts at a glance - because a web app is
+                worth a thousand equations! I am also trained in data science
+                and AI, and I am knowledgeable about climate tech, aerospace,
+                and the industry 4.0. Finally, I am a strong advocate of open
+                science. I am particularly interested in exploring how digital
+                platforms can be leveraged to support the scientific community.
+              </p>
+              <a href="projects.html" class="btn-bold">
+                <i class="fas fa-chevron-circle-right"></i>
+                See examples of projects
+              </a>
             </div>
-            <div class="cv-container centered-flex">
-              <a href="../static/CV.pdf" download class="cv-download">
-                <i class="fas fa-file-pdf"></i><br />
-                <p>Download my CV</p>
+            <div class="about-card">
+              <h5>Background</h5>
+              <p>
+                In 2018, I graduated from EPFL in Materials Science and
+                Engineering. I then learned data science and machine learning at
+                EPFL's Extension School. From 2018 to 2021, I was a research
+                associate under Prof. Matteo Seita at NTU in Singapore. I have
+                coordinated projects investigating how machine learning can be
+                applied to microscopy for high-throughput materials
+                characterization. I published
+                <a class="inline-link" href="publications.html">two papers</a>
+                in peer-reviewed scientific journals. I came back in Switzerland
+                in August 2021 and, in December, I completed Le Wagon's
+                Full-stack web development Bootcamp in 9 weeks.
+              </p>
+              <div class="places-worked">
+                <p>I worked / studied at:</p>
+                <div class="imgs-studied-container centered-flex">
+                  <img src="../static/assets/im0.png" alt="epfl" />
+                  <img src="../static/assets/im1.png" alt="esa" />
+                  <img src="../static/assets/im2.png" alt="csem" />
+                  <img src="../static/assets/im3.png" alt="ntu" />
+                  <img
+                    src="../static/assets/im4.png"
+                    alt="epfl extension school"
+                  />
+                  <img src="../static/assets/im5.png" alt="le wagon" />
+                </div>
+              </div>
+              <div class="cv-container centered-flex">
+                <a href="../static/CV.pdf" download class="cv-download">
+                  <i class="fas fa-file-pdf"></i><br />
+                  <p>Download my CV</p>
+                </a>
+              </div>
+            </div>
+            <div class="about-card">
+              <h5>Future steps</h5>
+              <p>
+                I am currently looking for new opportunities to apply my
+                skillset! I am open to freelance work, remote work, and
+                longer-term collaborations. Do you have an idea of scientific
+                app you'd like to develop? Let's discuss it!
+              </p>
+              <a href="contact.html" class="btn-bold">
+                <i class="fas fa-chevron-circle-right"></i>
+                Contact me
               </a>
             </div>
           </div>
-          <div class="about-card">
-            <h5>Future steps</h5>
-            <p>
-              I am currently looking for new opportunities to apply my skillset!
-              I am open to freelance work, remote work, and longer-term
-              collaborations. Do you have an idea of scientific app you'd like
-              to develop? Let's discuss it!
-            </p>
-            <a href="contact.html" class="btn-bold">
-              <i class="fas fa-chevron-circle-right"></i>
-              Contact me
-            </a>
-          </div>
         </div>
+      </section>
+      <div class="copyrights centered-flex">
+        <p>&copy; Mallory Wittwer (2021)</p>
       </div>
-    </section>
-    <div class="copyrights centered-flex">
-      <p>&copy; Mallory Wittwer (2021)</p>
     </div>
   </body>
   <script type="text/javascript" src="../../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/header.js"></script>
   <script type="text/javascript" src="../scripts/navbar.js"></script>
+  <script type="text/javascript" src="../scripts/mobile-block-global.js"></script>
   <script>
     $(document).ready(() => $("body").fadeIn());
   </script>

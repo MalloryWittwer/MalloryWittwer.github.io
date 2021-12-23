@@ -52,14 +52,14 @@
 }
 
 .pb-content {
-  width: 500px;
-  min-width: 500px;
+  max-width: 500px;
   padding: 30px 60px;
   z-index: 20;
   position: relative;
   background-color: var(--navBG);
   border-radius: 5px;
   transition: 0.3s;
+  opacity: 0.9;
 }
 
 .pb-content-left {
