@@ -76,7 +76,7 @@ a:hover {
 
 p {
   line-height: 1.8em;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .centered-flex {
@@ -96,7 +96,7 @@ h5 {
 }
 
 .info-title {
-  font-size: 102px;
+  font-size: 7rem;
   font-weight: 300;
   padding: 60px;
   text-align: center;

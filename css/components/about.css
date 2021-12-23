@@ -19,14 +19,14 @@
 .about-card h5 {
   opacity: 1;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
   padding: 10px 0px;
 }
 
 .btn-bold {
   margin: 20px 0px;
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: 0.2s;
   display: block;
   background-color: var(--darkBG);
@@ -89,9 +89,9 @@
 }
 
 .cv-download p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .cv-download i {
-  font-size: 42px;
+  font-size: 2.625rem;
 }

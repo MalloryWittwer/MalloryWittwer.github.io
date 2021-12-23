@@ -97,11 +97,11 @@
 }
 
 .social-link p {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .social-link i {
-  font-size: 42px;
+  font-size: 2.625rem;
 }
 
 .social-link:hover {

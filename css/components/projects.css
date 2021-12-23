@@ -66,7 +66,7 @@
 .project-category {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   opacity: 0.8;
   padding: 0px 20px;
 }
@@ -75,7 +75,7 @@
   padding: 10px 20px;
   margin: 5px 0px;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 1.75rem;
   letter-spacing: 2px;
   font-weight: 300;
   background-color: var(--lightDeco);
@@ -86,7 +86,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .skills li {
@@ -98,7 +98,7 @@
 }
 
 .project-about {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 5px 20px;
   line-height: 1.4em;
   opacity: 0.8;
@@ -113,7 +113,7 @@
   border: 2px solid var(--lightDeco);
   text-decoration: none;
   opacity: 0.8;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .sd-btn:hover {

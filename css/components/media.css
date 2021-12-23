@@ -1,6 +1,6 @@
 @media screen and (max-width: 840px) {
   .home-title {
-    font-size: 82px;
+    font-size: 5rem;
     white-space: normal;
   }
 
@@ -34,7 +34,7 @@
   }
 
   #pb-info-title {
-    font-size: 64px !important;
+    font-size: 4rem !important;
   }
 
   .figure-wrapper {
@@ -61,13 +61,13 @@
 
 @media screen and (max-width: 640px) {
   #projects-info-title {
-    font-size: 64px !important;
+    font-size: 4rem !important;
   }
 }
 
 @media screen and (max-width: 540px) {
   .home-title {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   p {
@@ -76,7 +76,7 @@
   }
 
   #pb-info-title {
-    font-size: 48px !important;
+    font-size: 3rem !important;
   }
 
   .about-card {
