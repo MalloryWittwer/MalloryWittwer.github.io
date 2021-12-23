@@ -24,14 +24,16 @@ const init_all = () => {
   scene_earth = new THREE.Scene();
 
   // Geometries
-  const geometry = new THREE.PlaneGeometry(30, 15);
-  const material = new THREE.MeshPhongMaterial();
+  const geometry = new THREE.PlaneGeometry(30, 30);
+  const texture = new THREE.TextureLoader().load("../static/assets/bg-rotated.png");
+  const material = new THREE.MeshPhongMaterial( { map: texture } );
   const plane = new THREE.Mesh(geometry, material);
-  plane.rotation.z = 0.3;
+  // plane.rotation.z = 0.3;
   scene.add(plane);
 
   const geometry_earth = new THREE.SphereGeometry(10, 100, 100);
-  const material_earth = new THREE.MeshPhongMaterial();
+  const texture_earth = new THREE.TextureLoader().load("../static/assets/blue-planet.png");
+  const material_earth = new THREE.MeshPhongMaterial( { map: texture_earth } );
   mesh = new THREE.Mesh(geometry_earth, material_earth);
   mesh.rotation.y -= 0.143;
   scene_earth.add(mesh);
@@ -41,14 +43,6 @@ const init_all = () => {
   const material_marker = new THREE.MeshPhongMaterial({ color: 0xed4545 });
   mesh_marker = new THREE.Mesh(geometry_marker, material_marker);
   scene_earth.add(mesh_marker);
-
-  // Textures
-  THREE.ImageUtils.crossOrigin = "";
-  material.map = THREE.ImageUtils.loadTexture("../static/assets/bg-try.png");
-
-  material_earth.map = THREE.ImageUtils.loadTexture(
-    "../static/assets/blue-planet.png"
-  );
 
   // Lightings
   const color = 0xffffff;

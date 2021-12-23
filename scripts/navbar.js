@@ -28,10 +28,8 @@ const mql = window.matchMedia("(max-width: 768px)");
 
 mql.onchange = (e) => {
   if (e.matches) {
-    console.log('closing');
     closeNavDisplay();
   } else {
-    console.log('opening');
     openNavDisplay();
   }
 };

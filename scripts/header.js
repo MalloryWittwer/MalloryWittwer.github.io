@@ -13,13 +13,10 @@ const init = () => {
   scene = new THREE.Scene();
 
   const geometry = new THREE.PlaneGeometry(30, 30);
-  const material = new THREE.MeshPhongMaterial();
+  const texture = new THREE.TextureLoader().load("../static/assets/bg-rotated.png");
+  const material = new THREE.MeshPhongMaterial( { map: texture } );
   const plane = new THREE.Mesh(geometry, material);
   scene.add(plane);
-  // plane.rotation.z = 0.3;
-
-  THREE.ImageUtils.crossOrigin = "";
-  material.map = THREE.ImageUtils.loadTexture("../static/assets/bg-rotated.png");
 
   const color = 0xffffff;
   const intensity = 0.9;
