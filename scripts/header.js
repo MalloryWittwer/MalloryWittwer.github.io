@@ -54,10 +54,11 @@ const resize = () => {
 };
 
 const animate = () => {
-  resize();
+  // resize();
+  window.addEventListener('resize', resize, false);
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
-};
+}
 
 init();
 animate();
