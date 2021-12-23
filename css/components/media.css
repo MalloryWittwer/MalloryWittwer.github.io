@@ -28,6 +28,10 @@
     max-width: 90%;
   }
 
+  #pb-info-title {
+    font-size: 64px !important;
+  }
+
   .figure-wrapper {
     width: 100% !important;
     border-radius: 0px !important;
@@ -37,10 +41,6 @@
     width: 100% !important;
     border-radius: 0px !important;
   }
-
-  /* .info-title {
-    font-size: 64px !important;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -62,5 +62,13 @@
   p {
     line-height: 1.5em !important;
     font-size: 1rem !important;
+  }
+
+  #pb-info-title {
+    font-size: 48px !important;
+  }
+
+  .about-card {
+    margin: 40px 20px !important;
   }
 }

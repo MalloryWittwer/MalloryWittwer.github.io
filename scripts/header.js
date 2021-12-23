@@ -12,7 +12,7 @@ const init = () => {
 
   scene = new THREE.Scene();
 
-  const geometry = new THREE.PlaneGeometry(30, 15);
+  const geometry = new THREE.PlaneGeometry(30, 30);
   const material = new THREE.MeshPhongMaterial();
   const plane = new THREE.Mesh(geometry, material);
   scene.add(plane);
