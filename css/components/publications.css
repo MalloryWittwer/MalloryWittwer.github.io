@@ -4,26 +4,6 @@
   background-color: transparent;
 }
 
-@media screen and (max-width: 840px) {
-  #main-pb {
-    max-width: 90%;
-  }
-
-  .figure-wrapper {
-    width: 100% !important;
-    border-radius: 0px !important;
-  }
-
-  #seg-image {
-    width: 100% !important;
-    border-radius: 0px !important;
-  }
-
-  .info-title {
-    font-size: 64px !important;
-  }
-}
-
 .pb-container {
   height: 520px;
   align-items: center;
@@ -90,16 +70,6 @@
 .pb-content-right {
   right: 12%;
   top: 9%;
-}
-
-@media screen and (max-width: 840px) {
-  .pb-content-left {
-    left: 0%;
-  }
-  
-  .pb-content-right {
-    right: 0%;
-  }
 }
 
 .figure-wrapper {

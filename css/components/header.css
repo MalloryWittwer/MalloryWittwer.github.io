@@ -79,26 +79,33 @@ nav {
   opacity: 0.9;
 }
 
-.sidebar {
+.sidebar, .sidebar-h {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
   min-width: 400px;
   height: 90px;
+  margin: 0px 30px;
+}
+
+.sidebar-h {
+  width: 50%;
+}
+
+.sidebar {
+  width: 40%;
 }
 
 .home-tab, .home-tab-mw, .home-tab-h {
   text-decoration: none;
-  /* margin: 0px 30px; */
   opacity: 0.9;
   background: none;
   transition: 0.3s;
+  font-size: 1.1rem;
 }
 
-.home-tab-h {
-  margin: 0px 20px;
-  font-size: 18px;
+.home-tab-mw {
+  margin: 0px 30px;
 }
 
 .home-tab:hover, .home-tab-h:hover {
