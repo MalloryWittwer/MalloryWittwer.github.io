@@ -1,0 +1,36 @@
+@media screen and (max-width: 840px) {
+  .home-title {
+    font-size: 82px;
+    white-space: normal;
+  }
+
+  .sidebar {
+      width: 80%;
+  }
+
+  #main-about {
+    max-width: 90%;
+  }
+
+  .about-card {
+    margin: 40px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .black-outline-bot,
+    .black-outline-top {
+      height: 0px;
+    }
+  
+    .home-subtitle {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 540px) {
+    .home-title {
+      font-size: 64px;
+    }
+  }
+  

@@ -4,16 +4,6 @@
   /* box-sizing: border-box; */
 }
 
-@media screen and (max-width: 840px) {
-  #main-about {
-    max-width: 90%;
-  }
-
-  .about-card {
-    margin: 40px !important;
-  }
-}
-
 .about-card {
   margin: 40px 60px;
   position: relative;
