@@ -130,10 +130,6 @@ textarea {
   display: block;
 }
 
-input[type="text"] {
-  margin-top: 18px;
-}
-
 ::placeholder {
   color: var(--lightText);
   opacity: 0.7;
