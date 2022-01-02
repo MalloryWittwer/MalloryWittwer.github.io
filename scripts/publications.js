@@ -38,7 +38,7 @@ window.addEventListener("scroll", () => {
       const wh = window.innerHeight;
 
       if (!first_flag && (wh - imtop - ht) >= 0) { 
-        animatedLoop(2, 45, 30, setImageGrain);
+        animatedLoop(2, 45, 100, setImageGrain);
         first_flag = true;
       };
 
@@ -48,7 +48,7 @@ window.addEventListener("scroll", () => {
       };
 
       if (!second_flag && imtop >= 0) {
-        animatedLoop(2, 45, 30, setImageGrain);
+        animatedLoop(2, 45, 100, setImageGrain);
         second_flag = true;
       }
 
