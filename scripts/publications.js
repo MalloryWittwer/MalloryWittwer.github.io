@@ -20,21 +20,32 @@ content.addEventListener("mousemove", (e) => {
 //   }
 // };
 
-const step = (x, end) => {
-  setImageGrain(x);
-  console.log(x);
-  if (x < end) {
-    requestAnimationFrame(function () {
-      step(x + 1, end);
-    });
-  }
+const animatedLoop = (start, end, speed, callable) => {
+  let x = start;
+  const step = () => {
+    image.setAttribute("src", `../static/figs2/seg_${x}.png`);
+    if (++x <= end) {
+      window.setTimeout(step, 40);
+    }
+  };
+  step();
 };
 
-const animatedLoop = (start, end, speed) => {
-  setTimeout(function () {
-    step(start, end);
-  }, 1200);
-}
+// const step = (x, end) => {
+//   setImageGrain(x);
+//   console.log(x);
+//   if (x < end) {
+//     requestAnimationFrame(function () {
+//       step(x + 1, end);
+//     });
+//   }
+// };
+
+// const animatedLoop = (start, end, speed) => {
+//   setTimeout(function () {
+//     step(start, end);
+//   }, 1200);
+// }
 
 const setImageGrain = (x) => {
   image.setAttribute("src", `../static/figs2/seg_${x}.png`);
