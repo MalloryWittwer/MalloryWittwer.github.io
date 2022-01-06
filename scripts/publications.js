@@ -9,16 +9,32 @@ content.addEventListener("mousemove", (e) => {
   divisor.style.width = x * 100 + "%";
 });
 
-const animatedLoop = (start, end, speed, callable) => {
-  for (let x = start; x < end; x++) {
-    setTimeout(
-      ((x) => {
-        return () => callable(x);
-      })(x),
-      x * speed
-    );
+// const animatedLoop = (start, end, speed, callable) => {
+//   for (let x = start; x < end; x++) {
+//     setTimeout(
+//       ((x) => {
+//         return () => callable(x);
+//       })(x),
+//       x * speed
+//     );
+//   }
+// };
+
+const step = (x, end) => {
+  setImageGrain(x);
+  console.log(x);
+  if (x < end) {
+    requestAnimationFrame(function () {
+      step(x + 1, end);
+    });
   }
 };
+
+const animatedLoop = (start, end, speed) => {
+  setTimeout(function () {
+    step(start, end);
+  }, 1200);
+}
 
 const setImageGrain = (x) => {
   image.setAttribute("src", `../static/figs2/seg_${x}.png`);
@@ -36,7 +52,7 @@ window.addEventListener("scroll", () => {
       const wh = window.innerHeight;
 
       if (!first_flag && wh - imtop - ht >= 0) {
-        animatedLoop(2, 45, 30, setImageGrain);
+        animatedLoop(2, 45, 800, setImageGrain);
         first_flag = true;
       }
 
@@ -46,7 +62,7 @@ window.addEventListener("scroll", () => {
       }
 
       if (!second_flag && imtop >= 0) {
-        animatedLoop(2, 45, 30, setImageGrain);
+        animatedLoop(2, 45, 800, setImageGrain);
         second_flag = true;
       }
 
