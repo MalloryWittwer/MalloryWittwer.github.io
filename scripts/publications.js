@@ -20,7 +20,7 @@ content.addEventListener("mousemove", (e) => {
 //   }
 // };
 
-const animatedLoop = (start, end, speed, callable) => {
+const animatedLoop = (start, end) => {
   let x = start;
   const step = () => {
     image.setAttribute("src", `../static/figs2/seg_${x}.png`);
@@ -31,25 +31,9 @@ const animatedLoop = (start, end, speed, callable) => {
   step();
 };
 
-// const step = (x, end) => {
-//   setImageGrain(x);
-//   console.log(x);
-//   if (x < end) {
-//     requestAnimationFrame(function () {
-//       step(x + 1, end);
-//     });
-//   }
+// const setImageGrain = (x) => {
+//   image.setAttribute("src", `../static/figs2/seg_${x}.png`);
 // };
-
-// const animatedLoop = (start, end, speed) => {
-//   setTimeout(function () {
-//     step(start, end);
-//   }, 1200);
-// }
-
-const setImageGrain = (x) => {
-  image.setAttribute("src", `../static/figs2/seg_${x}.png`);
-};
 
 let ticking = false;
 let first_flag = false;
@@ -63,7 +47,7 @@ window.addEventListener("scroll", () => {
       const wh = window.innerHeight;
 
       if (!first_flag && wh - imtop - ht >= 0) {
-        animatedLoop(2, 45, 800, setImageGrain);
+        animatedLoop(2, 45);
         first_flag = true;
       }
 
@@ -73,7 +57,7 @@ window.addEventListener("scroll", () => {
       }
 
       if (!second_flag && imtop >= 0) {
-        animatedLoop(2, 45, 800, setImageGrain);
+        animatedLoop(2, 45);
         second_flag = true;
       }
 
