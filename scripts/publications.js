@@ -9,17 +9,6 @@ content.addEventListener("mousemove", (e) => {
   divisor.style.width = x * 100 + "%";
 });
 
-// const animatedLoop = (start, end, speed, callable) => {
-//   for (let x = start; x < end; x++) {
-//     setTimeout(
-//       ((x) => {
-//         return () => callable(x);
-//       })(x),
-//       x * speed
-//     );
-//   }
-// };
-
 const animatedLoop = (start, end) => {
   let x = start;
   const step = () => {
@@ -30,10 +19,6 @@ const animatedLoop = (start, end) => {
   };
   step();
 };
-
-// const setImageGrain = (x) => {
-//   image.setAttribute("src", `../static/figs2/seg_${x}.png`);
-// };
 
 let ticking = false;
 let first_flag = false;
