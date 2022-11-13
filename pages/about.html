@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body onload="checkMQ()">
-    <div class="mobile-container centered-flex">
+    <!-- <div class="mobile-container centered-flex">
       <div id="mobile-block">
         <p>Mobile experience coming soon!</p>
         <p>In the meantime, please use a larger screen. Thank you!</p>
       </div>
-    </div>
+    </div> -->
 
     <div class="global-container">
       <canvas id="header-canvas"> </canvas>
@@ -35,7 +35,7 @@
         <ul class="sidebar">
           <li><a href="../index.html" class="home-tab">Home</a></li>
           <li><a href="about.html" class="home-tab">Info</a></li>
-          <li><a href="publications.html" class="home-tab">Publications</a></li>
+          <!-- <li><a href="publications.html" class="home-tab">Publications</a></li> -->
           <li><a href="projects.html" class="home-tab">Projects</a></li>
           <li><a href="contact.html" class="home-tab">Contact</a></li>
         </ul>
@@ -51,12 +51,9 @@
             <div class="about-card">
               <h5>About me</h5>
               <p>
-                I am passionate about imaging science, materials science, machine learning, and web development. I love
+                I'm passionate about image processing, materials science, machine learning, and web development. I love
                 creating web-based demonstrators, interactive data
-                visualizations, and scientific software tools. I am also
-                very interested in climate tech, aerospace, and the industry 4.0.
-                I look forward to explore how digital technology can be
-                leveraged to support innovation in the scientific community!
+                visualizations, and scientific software tools.
               </p>
               <a href="projects.html" class="btn-bold">
                 <i class="fas fa-chevron-circle-right"></i>
@@ -65,33 +62,28 @@
             </div>
             <div class="about-card">
               <h5>Background</h5>
+              <!-- 
               <div class="places-worked">
-                <!-- <p>I have worked or studied at these places:</p> -->
-                <div class="imgs-studied-container centered-flex">
-                  <img src="../static/assets/im0.png" alt="epfl" />
-                  <img src="../static/assets/im1.png" alt="esa" />
-                  <img src="../static/assets/im2.png" alt="csem" />
-                  <img src="../static/assets/im3.png" alt="ntu" />
-                  <img
+                  <div class="imgs-studied-container centered-flex">
+                    <img src="../static/assets/im0.png" alt="epfl" />
+                    <img src="../static/assets/im1.png" alt="esa" />
+                    <img src="../static/assets/im2.png" alt="csem" />
+                    <img src="../static/assets/im3.png" alt="ntu" />
+                    <img
                     src="../static/assets/im4.png"
                     alt="epfl extension school"
-                  />
-                  <img src="../static/assets/im5.png" alt="le wagon" />
+                    />
+                    <img src="../static/assets/im5.png" alt="le wagon" />
+                  </div>
                 </div>
-              </div>
+              -->
               <p>
                 In 2018, I graduated from EPFL in Materials Science and
-                Engineering and from EPFL's Extension School in Data Science and
-                Machine Learning. From 2018 to 2021, I was a research associate
-                under Prof. Matteo Seita at NTU in Singapore. I have coordinated
-                projects investigating how machine learning can be applied to
-                microscopy for high-throughput materials characterization. I
-                published
-                <a class="inline-link" href="publications.html">two papers</a>
-                in scientific journals. I came back in Switzerland in August
-                2021 and, in December, I completed Le Wagon's Full-stack web
-                development Bootcamp in 9 weeks. Since April 2022, I have been working at EPFL's Image Analysis Hub where I support scientists with image analysis and machine learning for image quantification.
+                Engineering. From 2018 to 2021, I was a research associate
+                at NTU in Singapore. I have developed machine learning-based microscopy techniques for metal additive manufacturing. In December 2021, I completed Le Wagon's Full-stack web
+                development Bootcamp in 9 weeks. Since April 2022, I've been working at EPFL's <a class="inline-link" href="https://imaging.epfl.ch/">Image Analysis Hub</a> where I support scientists with image analysis and machine learning for image quantification.
               </p>
+              <br>
               <div class="cv-container centered-flex">
                 <a href="../static/CV.pdf" download class="cv-download">
                   <i class="fas fa-file-pdf"></i><br />
@@ -99,36 +91,33 @@
                 </a>
               </div>
             </div>
-            <!-- <div class="about-card">
-              <h5>Contact</h5>
+
+            <div class="about-card">
+              <h5>Selected Publications</h5>
               <p>
-                I am currently looking for new opportunities to apply my
-                skillset! I am open to freelance work, remote work, and
-                longer-term collaborations. Do you have an idea of scientific
-                web application you'd like to develop? Let's discuss it!
+                <a class="inline-link" href="https://www.nature.com/articles/s41524-021-00688-1">A machine learning approach to map crystal orientation by optical microscopy</a>
               </p>
-              <a href="contact.html" class="btn-bold">
-                <i class="fas fa-chevron-circle-right"></i>
-                Contact me
-              </a>
-            </div> -->
+              <p>
+                <a class="inline-link" href="https://www.sciencedirect.com/science/article/pii/S104458032100108X">A grain segmentation method based on directional reflectance microscopy</a>
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
       <div class="copyrights centered-flex">
         <p>
-          Made from scratch by Mallory
-          Wittwer (2022)
+          &#169; Mallory Wittwer (2022)
         </p>
       </div>
     </div>
   </body>
   <script type="text/javascript" src="../../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/header.js"></script>
-  <script
+  <!-- <script
     type="text/javascript"
     src="../scripts/mobile-block-global.js"
-  ></script>
+  ></script> -->
   <script>
     $(document).ready(() => $("body").fadeIn());
   </script>

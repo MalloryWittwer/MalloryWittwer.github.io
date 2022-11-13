@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body onload="checkMQ()">
-    <div class="mobile-container centered-flex">
+    <!-- <div class="mobile-container centered-flex">
       <div id="mobile-block">
         <p>Mobile experience coming soon!</p>
         <p>In the meantime, please use a larger screen. Thank you!</p>
       </div>
-    </div>
+    </div> -->
 
     <div class="global-container">
       <canvas id="header-canvas"> </canvas>
@@ -35,7 +35,7 @@
         <ul class="sidebar">
           <li><a href="../index.html" class="home-tab">Home</a></li>
           <li><a href="about.html" class="home-tab">Info</a></li>
-          <li><a href="publications.html" class="home-tab">Publications</a></li>
+          <!-- <li><a href="publications.html" class="home-tab">Publications</a></li> -->
           <li><a href="projects.html" class="home-tab">Projects</a></li>
           <li><a href="contact.html" class="home-tab">Contact</a></li>
         </ul>
@@ -46,16 +46,17 @@
       </nav>
       <section>
         <div class="main-container">
-          <h2 class="info-title">Contact</h2>
+          <h2 class="info-title" id="contact-info-title">Contact</h2>
           <div class="content-container main-contact">
             <div class="contact-wrapper">
               <div class="flex-wrap-container">
                 <div class="contact-details">
+                  
                   <div class="table-wrapper centered-flex">
                     <table id="address-table">
                       <tr>
                         <td>Address</td>
-                        <td>La Chaux-de-Fonds, Switzerland</td>
+                        <td>St-Sulpice, Switzerland</td>
                       </tr>
                       <tr>
                         <td>Phone</td>
@@ -67,6 +68,7 @@
                       </tr>
                     </table>
                   </div>
+                 
 
                   <div class="earth-canvas centered-flex">
                     <canvas id="earth"></canvas>
@@ -94,14 +96,14 @@
                       <p>Github</p>
                     </a>
 
-                    <a
+                    <!-- <a
                       href="https://medium.com/@mallory.wittwer"
                       target="_blank"
                       class="social-link"
                     >
                       <i class="fab fa-medium"></i><br />
                       <p>Medium</p>
-                    </a>
+                    </a> -->
                   </div>
                 </div>
               </div>
@@ -158,18 +160,17 @@
       </section>
       <div class="copyrights centered-flex">
         <p>
-          Made from scratch by Mallory
-          Wittwer (2022)
+          &#169; Mallory Wittwer (2022)
         </p>
       </div>
     </div>
   </body>
   <script type="text/javascript" src="../scripts/three.js"></script>
   <script type="text/javascript" src="../scripts/contact.js"></script>
-  <script
+  <!-- <script
     type="text/javascript"
     src="../scripts/mobile-block-global.js"
-  ></script>
+  ></script> -->
   <script>
     $(document).ready(() => $("body").fadeIn());
   </script>
